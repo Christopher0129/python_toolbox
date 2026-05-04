@@ -8,6 +8,7 @@
 - [常用内置函数](./builtins/common-builtins.md)
 - [异常类型合集](./basics/exception-types.md)
 - [常见 Python 实战脚本](./examples/common_cases.md)
+- [算法与数据结构专题](./topics/algorithms-data-structures.md)
 - [文件处理专题](./topics/file-processing.md)
 - [网络编程专题](./topics/network-programming.md)
 
@@ -20,6 +21,9 @@
 | 做文件处理和数据清洗 | [csv](./stdlib/csv.md) → [json](./stdlib/json.md) → [pathlib](./stdlib/pathlib.md) → [文件处理专题](./topics/file-processing.md) |
 | 做网络请求和接口调用 | [urllib](./stdlib/urllib.md) → [requests](./third_party/requests.md) → [socket](./stdlib/socket.md) → [网络编程专题](./topics/network-programming.md) |
 | 补测试、调试和排错能力 | [unittest](./stdlib/unittest.md) → [pdb](./stdlib/pdb.md) → [异常处理](./basics/exceptions.md) → [异常类型合集](./basics/exception-types.md) |
+| 补算法、数据结构和刷题基础 | [算法与数据结构专题](./topics/algorithms-data-structures.md) → [collections](./stdlib/collections.md) → [itertools 与 functools](./stdlib/itertools_functools.md) |
+| 做 Excel、图表和数据汇报 | [pandas](./third_party/pandas.md) → [openpyxl](./third_party/openpyxl.md) → [matplotlib](./third_party/matplotlib.md) |
+| 进入现代 Python 测试流 | [pytest](./third_party/pytest.md) → [unittest](./stdlib/unittest.md) → [异常类型合集](./basics/exception-types.md) |
 | 进入 Web 后端开发 | [Flask 入门](./frameworks/flask.md) 或 [Django 入门](./frameworks/django.md) → [SQLAlchemy 2.x 基础](./database/sqlalchemy.md) |
 
 ## 按任务查找
@@ -70,10 +74,26 @@
 - `hashlib`：哈希摘要
 - `decimal`：金额等精确计算
 
+### 数据分析、图表和 Excel
+
+- `numpy`：数组和数值计算
+- `pandas`：表格数据清洗和聚合
+- `matplotlib`：基础可视化和折线柱状图
+- `openpyxl`：读写 Excel 文件、样式、工作表
+
+### 算法、数据结构和刷题
+
+- `list` / `dict` / `set`：最常用基础结构
+- `collections.deque`：队列、双端队列、滑动窗口
+- `collections.Counter`：计数和频率统计
+- `itertools`：组合、排列、笛卡尔积
+- 系统整理见 [算法与数据结构专题](./topics/algorithms-data-structures.md)
+
 ### 测试、调试和排错
 
 - `doctest`：文档即测试
 - `unittest`：正式单元测试
+- `pytest`：更常用的测试框架和夹具系统
 - `pdb`：断点调试
 - [异常处理](./basics/exceptions.md)：异常写法和捕获方式
 - [异常类型合集](./basics/exception-types.md)：按报错名定位原因
@@ -146,6 +166,9 @@
 - [requests：HTTP 请求](./third_party/requests.md)
 - [numpy：数值计算](./third_party/numpy.md)
 - [pandas：表格数据分析](./third_party/pandas.md)
+- [matplotlib：基础数据可视化](./third_party/matplotlib.md)
+- [openpyxl：Excel 读写](./third_party/openpyxl.md)
+- [pytest：测试框架](./third_party/pytest.md)
 
 ## 专题与扩展
 
@@ -157,6 +180,7 @@
 
 ### 场景专题
 
+- [算法与数据结构专题](./topics/algorithms-data-structures.md)
 - [文件处理专题](./topics/file-processing.md)
 - [网络编程专题](./topics/network-programming.md)
 
