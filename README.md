@@ -1,16 +1,84 @@
-# Python 知识库索引
+# Python 知识库首页
 
-这套知识库面向日常 Python 开发，按 `内置函数`、`标准库`、`第三方库`、`专题`、`实战案例` 组织，优先覆盖高频模块和常见工程场景。
+这套知识库面向日常 Python 开发，适合用来做三件事：快速查函数、按场景找模块、按路线系统学习。
 
 ## 快速入口
 
 - [函数速查索引](./函数索引.md)
 - [常用内置函数](./builtins/common-builtins.md)
-- [标准库总览](#标准库)
-- [专题学习](#专题)
-- [实战案例](#实战案例)
+- [异常类型合集](./basics/exception-types.md)
+- [常见 Python 实战脚本](./examples/common_cases.md)
+- [文件处理专题](./topics/file-processing.md)
+- [网络编程专题](./topics/network-programming.md)
 
-## 标准库
+## 学习路线
+
+| 目标 | 推荐入口 |
+| --- | --- |
+| 从零开始补 Python 常用能力 | [常用内置函数](./builtins/common-builtins.md) → [string](./stdlib/string.md) → [os](./stdlib/os.md) → [pathlib](./stdlib/pathlib.md) |
+| 写脚本、命令行工具、自动化任务 | [argparse](./stdlib/argparse.md) → [sys](./stdlib/sys.md) → [subprocess](./stdlib/subprocess.md) → [logging](./stdlib/logging.md) |
+| 做文件处理和数据清洗 | [csv](./stdlib/csv.md) → [json](./stdlib/json.md) → [pathlib](./stdlib/pathlib.md) → [文件处理专题](./topics/file-processing.md) |
+| 做网络请求和接口调用 | [urllib](./stdlib/urllib.md) → [requests](./third_party/requests.md) → [socket](./stdlib/socket.md) → [网络编程专题](./topics/network-programming.md) |
+| 补测试、调试和排错能力 | [unittest](./stdlib/unittest.md) → [pdb](./stdlib/pdb.md) → [异常处理](./basics/exceptions.md) → [异常类型合集](./basics/exception-types.md) |
+| 进入 Web 后端开发 | [Flask 入门](./frameworks/flask.md) 或 [Django 入门](./frameworks/django.md) → [SQLAlchemy 2.x 基础](./database/sqlalchemy.md) |
+
+## 按任务查找
+
+### 写脚本和自动化
+
+- `argparse`：解析命令参数
+- `sys`：拿启动参数、退出码、模块路径
+- `subprocess`：调用外部程序
+- `logging`：记录运行日志
+- `tempfile`：安全创建临时文件
+
+### 文件和目录处理
+
+- `pathlib`：路径拼接、读写文件
+- `os`：遍历目录、环境变量
+- `glob`：批量匹配文件
+- `shutil`：复制、移动、打包
+- `hashlib`：文件校验
+- 进阶串联见 [文件处理专题](./topics/file-processing.md)
+
+### 文本和数据格式
+
+- `string`：字符常量、模板字符串
+- `re`：匹配、提取、替换
+- `json`：结构化数据读写
+- `csv`：表格文本输入输出
+- `pickle`：本地对象缓存
+- `datetime` / `time`：时间处理和计时
+
+### 并发和网络
+
+- `threading`：简单多线程
+- `queue`：线程安全队列
+- `concurrent.futures`：线程池和进程池
+- `asyncio`：高并发 I/O
+- `multiprocessing`：CPU 密集型并行
+- `urllib` / `requests`：HTTP 请求
+- `http.server`：临时本地文件服务
+- `socket`：TCP/UDP 通信
+- 进阶串联见 [网络编程专题](./topics/network-programming.md)
+
+### 数据存储和精确计算
+
+- `sqlite3`：本地数据库
+- `SQLAlchemy`：ORM 和数据库访问
+- `uuid`：唯一 ID
+- `hashlib`：哈希摘要
+- `decimal`：金额等精确计算
+
+### 测试、调试和排错
+
+- `doctest`：文档即测试
+- `unittest`：正式单元测试
+- `pdb`：断点调试
+- [异常处理](./basics/exceptions.md)：异常写法和捕获方式
+- [异常类型合集](./basics/exception-types.md)：按报错名定位原因
+
+## 标准库总览
 
 ### 文本、字符串、数据格式
 
@@ -79,9 +147,9 @@
 - [numpy：数值计算](./third_party/numpy.md)
 - [pandas：表格数据分析](./third_party/pandas.md)
 
-## 专题
+## 专题与扩展
 
-### 语言基础与代码组织
+### 语言基础
 
 - [面向对象编程](./basics/oop.md)
 - [异常处理](./basics/exceptions.md)
@@ -92,86 +160,18 @@
 - [文件处理专题](./topics/file-processing.md)
 - [网络编程专题](./topics/network-programming.md)
 
-### Web 框架
+### Web 和数据库
 
 - [Flask 入门](./frameworks/flask.md)
 - [Django 入门](./frameworks/django.md)
-
-### 数据库
-
 - [SQLAlchemy 2.x 基础](./database/sqlalchemy.md)
 
-## 实战案例
+### 实战案例
 
 - [常见 Python 实战脚本](./examples/common_cases.md)
 
-## 按场景导航
-
-### 写脚本和命令行工具
-
-- `argparse`：解析命令参数
-- `sys`：拿启动参数、退出码、模块路径
-- `subprocess`：调用外部程序
-- `logging`：给脚本加日志
-
-### 文本处理和日志清洗
-
-- `string`：字符常量、模板拼接
-- `re`：匹配、提取、替换
-- `json`：结构化文本读写
-- `csv`：表格文本输入输出
-- `pickle`：对象序列化到本地文件
-
-### 文件批处理
-
-- `pathlib`：路径拼接、读写文件
-- `os`：遍历目录、环境变量
-- `glob`：按通配符批量找文件
-- `tempfile`：生成安全的临时文件
-- `shutil`：复制、移动、打包
-- 进阶串联见 [文件处理专题](./topics/file-processing.md)
-
-### 调试与测试
-
-- `pdb`：断点调试
-- `doctest`：给小函数补文档测试
-- `unittest`：正式单元测试
-- `异常类型合集`：按报错名快速定位原因
-
-### 并发与通信
-
-- `threading`：简单并发和阻塞库协作
-- `queue`：线程之间传递任务
-- `concurrent.futures`：快速上线程池或进程池
-- `asyncio`：高并发 I/O
-- `multiprocessing`：CPU 密集型并行
-- `urllib`：基础 URL 处理与下载
-- `http.server`：快速起一个本地文件服务
-- `socket`：TCP/UDP 通信
-- `email`：构造邮件正文和附件
-- 进阶串联见 [网络编程专题](./topics/network-programming.md)
-
-### 数据存储与安全
-
-- `sqlite3`：本地嵌入式数据库
-- `hashlib`：生成哈希摘要
-- `uuid`：生成唯一 ID
-- `pickle`：本地对象缓存
-- `decimal`：金额等精确计算
-
-## 学习顺序建议
-
-1. 先看 [常用内置函数](./builtins/common-builtins.md)、[string](./stdlib/string.md)、[os](./stdlib/os.md)、[pathlib](./stdlib/pathlib.md)
-2. 再看 [json](./stdlib/json.md)、[datetime](./stdlib/datetime.md)、[math](./stdlib/math.md)、[random](./stdlib/random.md)、[decimal](./stdlib/decimal.md)
-3. 然后学习 [argparse](./stdlib/argparse.md)、[sys](./stdlib/sys.md)、[subprocess](./stdlib/subprocess.md)、[glob](./stdlib/glob.md)、[tempfile](./stdlib/tempfile.md)、[异常处理](./basics/exceptions.md)
-4. 工程化阶段补 [logging](./stdlib/logging.md)、[unittest](./stdlib/unittest.md)、[pdb](./stdlib/pdb.md)、[异常类型合集](./basics/exception-types.md)、[queue](./stdlib/queue.md)
-5. 数据处理时补 [csv](./stdlib/csv.md)、[pickle](./stdlib/pickle.md)、[sqlite3](./stdlib/sqlite3.md)、[hashlib](./stdlib/hashlib.md)
-6. 按项目需要学习 [urllib](./stdlib/urllib.md)、[http.server](./stdlib/http_server.md)、[concurrent.futures](./stdlib/concurrent_futures.md)、[multiprocessing](./stdlib/multiprocessing.md)
-7. Web 项目再进入 [Flask](./frameworks/flask.md)、[Django](./frameworks/django.md)
-8. 场景串联时读 [文件处理专题](./topics/file-processing.md) 和 [网络编程专题](./topics/network-programming.md)
-
 ## 维护建议
 
-- 新增模块时，同时更新本文件和 [函数速查索引](./函数索引.md)。
-- 单模块文档优先保持四部分：用途、常用 API、示例、注意事项。
-- 组合文档可以保留，但索引应优先指向单模块页面。
+- 新增模块时，同时更新本文件和 [函数速查索引](./函数索引.md)
+- 单模块文档优先保持：用途、常用 API、示例、注意事项
+- 组合文档可以保留，但首页应优先指向单模块页面或专题页
