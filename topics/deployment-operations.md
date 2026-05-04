@@ -31,6 +31,7 @@
 - [备份与归档专题](./backup-archiving.md)
 - [发布策略专题](./deployment-strategies.md)
 - [特性开关专题](./feature-flags.md)
+- [Worker 运行治理专题](./worker-runtime-operations.md)
 - [Kubernetes 运维专题](./kubernetes-operations.md)
 - [基础设施自动化专题](./infrastructure-automation.md)
 

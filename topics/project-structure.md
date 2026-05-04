@@ -57,6 +57,7 @@ tests/
 - 小项目可以先用 `requirements.txt`
 - 项目变大后，可以转向 `pyproject.toml`
 - 第三方库只引入当前确实需要的部分
+- 多包项目要先定义共享边界，再扩目录层级
 
 ## 常见问题
 
@@ -71,5 +72,8 @@ tests/
 - [logging](../stdlib/logging.md)
 - [Flask 入门](../frameworks/flask.md)
 - [FastAPI 入门](../frameworks/fastapi.md)
+- [Python 包管理专题](./python-package-management.md)
+- [Monorepo 与多包项目专题](./monorepo-multipackage.md)
+- [开发环境热重载专题](./dev-reload-workflows.md)
 
 返回 [索引](../README.md)

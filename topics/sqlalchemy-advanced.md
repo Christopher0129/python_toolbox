@@ -22,5 +22,6 @@
 - [SQLAlchemy 2.x 基础](../database/sqlalchemy.md)
 - [SQL 优化专题](./sql-optimization.md)
 - [数据库开发专题](./database-development.md)
+- [异步数据库专题](./async-database-access.md)
 
 返回 [索引](../README.md)

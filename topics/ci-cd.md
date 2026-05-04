@@ -23,5 +23,7 @@
 - [mypy](../third_party/mypy.md)
 - [pytest](../third_party/pytest.md)
 - [打包与发布专题](./packaging-release.md)
+- [测试矩阵专题](./test-matrix.md)
+- [依赖治理专题](./dependency-governance.md)
 
 返回 [索引](../README.md)

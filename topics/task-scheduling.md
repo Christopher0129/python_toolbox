@@ -16,5 +16,7 @@
 - [celery](../third_party/celery.md)
 - [命令行自动化专题](./automation-cli.md)
 - [部署与运维专题](./deployment-operations.md)
+- [任务队列架构专题](./task-queue-architectures.md)
+- [Worker 运行治理专题](./worker-runtime-operations.md)
 
 返回 [索引](../README.md)

@@ -16,5 +16,7 @@
 - [Dagster](../third_party/dagster.md)
 - [Airflow](../third_party/airflow.md)
 - [任务调度专题](./task-scheduling.md)
+- [任务队列架构专题](./task-queue-architectures.md)
+- [Worker 运行治理专题](./worker-runtime-operations.md)
 
 返回 [索引](../README.md)

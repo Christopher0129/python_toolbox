@@ -35,6 +35,8 @@
 | [计算机视觉专题](./topics/computer-vision.md) | [NATS 专题](./topics/nats-messaging.md) | [PDF 与 OCR 专题](./topics/pdf-ocr-processing.md) | [Schema Registry 专题](./topics/schema-registry.md) |
 | [文档抽取专题](./topics/document-extraction.md) | [GraphQL API 专题](./topics/graphql-apis.md) | [Redis 高级专题](./topics/redis-advanced.md) | [GitOps 交付专题](./topics/gitops-delivery.md) |
 | [媒体处理专题](./topics/media-processing.md) | [Triton 推理服务专题](./topics/triton-inference-serving.md) | [推理优化专题](./topics/inference-optimization.md) | [Helm 与 Chart 专题](./topics/helm-charts.md) |
+| [Python 包管理专题](./topics/python-package-management.md) | [开发环境热重载专题](./topics/dev-reload-workflows.md) | [异步数据库专题](./topics/async-database-access.md) | [依赖治理专题](./topics/dependency-governance.md) |
+| [Monorepo 与多包项目专题](./topics/monorepo-multipackage.md) | [Worker 运行治理专题](./topics/worker-runtime-operations.md) | [PostgreSQL 开发专题](./topics/postgresql-development.md) | [测试矩阵专题](./topics/test-matrix.md) |
 
 ## 学习路线
 
@@ -53,6 +55,7 @@
 | 做异步网络或高并发抓取 | [asyncio](./stdlib/asyncio.md) → [httpx](./third_party/httpx.md) → [aiohttp](./third_party/aiohttp.md) → [Web 抓取专题](./topics/web-scraping.md) |
 | 学数据库建模和迁移 | [sqlite3](./stdlib/sqlite3.md) → [SQLAlchemy 2.x 基础](./database/sqlalchemy.md) → [Alembic](./third_party/alembic.md) → [数据库开发专题](./topics/database-development.md) |
 | 学配置、发布和部署 | [导入、包与虚拟环境](./basics/imports-venv.md) → [配置管理专题](./topics/config-management.md) → [打包与发布专题](./topics/packaging-release.md) → [部署与运维专题](./topics/deployment-operations.md) |
+| 学现代 Python 包管理 | [导入、包与虚拟环境](./basics/imports-venv.md) → [Python 包管理专题](./topics/python-package-management.md) → [uv](./third_party/uv.md) / [Poetry](./third_party/poetry.md) |
 | 建立团队工程质量约束 | [typing 与 dataclasses](./stdlib/typing_dataclasses.md) → [mypy](./third_party/mypy.md) → [ruff](./third_party/ruff.md) → [代码质量专题](./topics/code-quality.md) → [CI/CD 专题](./topics/ci-cd.md) |
 | 做缓存、后台任务和实时系统 | [queue](./stdlib/queue.md) → [redis-py](./third_party/redis.md) → [celery](./third_party/celery.md) → [websockets](./third_party/websockets.md) → [缓存与队列专题](./topics/cache-queues.md) |
 | 做浏览器自动化与端到端测试 | [Playwright](./third_party/playwright.md) → [浏览器自动化专题](./topics/browser-automation.md) → [测试进阶专题](./topics/testing-advanced.md) |
@@ -67,11 +70,13 @@
 | 做搜索与混合检索 | [搜索系统专题](./topics/search-systems.md) → [Elasticsearch](./third_party/elasticsearch.md) 或 [opensearch-py](./third_party/opensearch_py.md) → [向量检索专题](./topics/vector-retrieval.md) |
 | 做 MongoDB 异步服务 | [MongoDB 开发专题](./topics/mongodb-development.md) → [PyMongo](./third_party/pymongo.md) / [Motor](./third_party/motor.md) → [Beanie](./third_party/beanie.md) |
 | 做 PostgreSQL 类型化后端 | [PostgreSQL 开发专题](./topics/postgresql-development.md) → [psycopg](./third_party/psycopg.md) → [SQLModel](./third_party/sqlmodel.md) → [API 开发专题](./topics/api-development.md) |
+| 做异步数据库服务 | [异步数据库专题](./topics/async-database-access.md) → [asyncpg](./third_party/asyncpg.md) / [databases](./third_party/databases.md) → [SQLAlchemy 进阶专题](./topics/sqlalchemy-advanced.md) |
 | 做 MySQL 业务库开发 | [MySQL 开发专题](./topics/mysql-development.md) → [PyMySQL](./third_party/pymysql.md) / [mysqlclient](./third_party/mysqlclient.md) → [SQL 优化专题](./topics/sql-optimization.md) |
 | 做分析型日志与宽表查询 | [ClickHouse 分析专题](./topics/clickhouse-analytics.md) → [clickhouse-connect](./third_party/clickhouse_connect.md) → [列式数据处理专题](./topics/columnar-data-processing.md) |
 | 做 Spark / Lakehouse 数据平台 | [Spark 数据处理专题](./topics/spark-data-processing.md) → [PySpark](./third_party/pyspark.md) → [Delta Lake 专题](./topics/delta-lake.md) → [deltalake](./third_party/deltalake.md) |
 | 做工程化爬虫 | [Web 抓取专题](./topics/web-scraping.md) → [Scrapy 爬取专题](./topics/scrapy-crawling.md) → [数据清洗专题](./topics/data-cleaning.md) → [任务调度专题](./topics/task-scheduling.md) |
 | 做高质量测试体系 | [测试与质量专题](./topics/testing-quality.md) → [测试进阶专题](./topics/testing-advanced.md) → [属性测试专题](./topics/property-based-testing.md) → [并行测试专题](./topics/parallel-testing.md) |
+| 做多版本和多环境兼容测试 | [测试矩阵专题](./topics/test-matrix.md) → [CI/CD 专题](./topics/ci-cd.md) → [Hatch](./third_party/hatch.md) |
 | 做现代分析工程与列式分析 | [Polars](./third_party/polars.md) → [DuckDB](./third_party/duckdb.md) → [列式数据处理专题](./topics/columnar-data-processing.md) → [分析工程专题](./topics/analytics-engineering.md) |
 | 做现代认证与权限治理 | [Token 认证专题](./topics/token-authentication.md) → [OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md) → [RBAC 与 ABAC 专题](./topics/rbac-abac.md) |
 | 做 RAG 和向量检索应用 | [向量检索专题](./topics/vector-retrieval.md) → [RAG 流水线专题](./topics/rag-pipelines.md) → [LangChain](./third_party/langchain.md) 或 [LlamaIndex](./third_party/llamaindex.md) |
@@ -83,10 +88,13 @@
 | 做模型服务与推理平台 | [模型服务专题](./topics/model-serving.md) → [推理优化专题](./topics/inference-optimization.md) → [ONNX Runtime](./third_party/onnxruntime.md) → [Triton 推理服务专题](./topics/triton-inference-serving.md) |
 | 做密钥与多环境配置治理 | [配置管理专题](./topics/config-management.md) → [密钥管理专题](./topics/secrets-management.md) → [pydantic-settings](./third_party/pydantic_settings.md) → [hvac](./third_party/hvac.md) |
 | 做 Kubernetes 工程化交付 | [Kubernetes 运维专题](./topics/kubernetes-operations.md) → [Helm 与 Chart 专题](./topics/helm-charts.md) → [GitOps 交付专题](./topics/gitops-delivery.md) |
+| 做多包仓库与共享组件治理 | [项目结构专题](./topics/project-structure.md) → [Monorepo 与多包项目专题](./topics/monorepo-multipackage.md) → [PDM](./third_party/pdm.md) |
+| 做 worker 运行治理与调优 | [任务队列架构专题](./topics/task-queue-architectures.md) → [Worker 运行治理专题](./topics/worker-runtime-operations.md) → [psutil](./third_party/psutil.md) |
 | 做服务韧性与安全发布 | [限流专题](./topics/rate-limiting.md) → [幂等与重试专题](./topics/idempotency-retries.md) → [断路器与隔离专题](./topics/circuit-breakers-bulkheads.md) → [发布策略专题](./topics/deployment-strategies.md) |
 | 做事件驱动系统协作 | [事件驱动架构专题](./topics/event-driven-architecture.md) → [消息系统专题](./topics/message-systems.md) → [数据契约专题](./topics/data-contracts.md) → [消费者驱动契约专题](./topics/consumer-driven-contracts.md) |
 | 做 CQRS / Event Sourcing / Saga 架构 | [CQRS 专题](./topics/cqrs.md) → [Event Sourcing 专题](./topics/event-sourcing.md) → [Saga 模式专题](./topics/saga-patterns.md) |
 | 做供应链安全与制品治理 | [安全基础专题](./topics/security-basics.md) → [密码安全专题](./topics/password-security.md) → [供应链安全专题](./topics/supply-chain-security.md) |
+| 做依赖治理与升级策略 | [Python 包管理专题](./topics/python-package-management.md) → [依赖治理专题](./topics/dependency-governance.md) → [供应链安全专题](./topics/supply-chain-security.md) |
 
 ## 按任务查找
 
@@ -142,12 +150,13 @@
 - `sqlite3`：本地数据库
 - `SQLAlchemy`：ORM 和数据库访问
 - `Alembic`：数据库迁移
+- `asyncpg` / `databases`：异步数据库访问
 - `PyMySQL` / `mysqlclient`：MySQL 驱动
 - `redis-py` / `Redis OM`：键值与文档模型访问
 - `uuid`：唯一 ID
 - `hashlib`：哈希摘要
 - `decimal`：金额等精确计算
-- 进阶串联见 [数据库开发专题](./topics/database-development.md)、[MySQL 开发专题](./topics/mysql-development.md)、[Redis 高级专题](./topics/redis-advanced.md)
+- 进阶串联见 [数据库开发专题](./topics/database-development.md)、[异步数据库专题](./topics/async-database-access.md)、[MySQL 开发专题](./topics/mysql-development.md)、[Redis 高级专题](./topics/redis-advanced.md)
 
 ### 数据分析、图表和 Excel
 
@@ -178,9 +187,10 @@
 - `logging`：运行日志
 - `shutil` / `zipfile`：备份归档
 - `gunicorn` / `uvicorn` / Docker：服务部署入口
+- `uv` / `Poetry` / `PDM` / `Hatch`：项目环境、构建与依赖管理
 - `Helm` / `Kubernetes`：容器编排与模板化部署
 - `ansible-runner` / `python-terraform`：基础设施自动化入口
-- 系统整理见 [配置管理专题](./topics/config-management.md)、[密钥管理专题](./topics/secrets-management.md)、[打包与发布专题](./topics/packaging-release.md)、[部署与运维专题](./topics/deployment-operations.md)、[发布策略专题](./topics/deployment-strategies.md)、[Docker 专题](./topics/docker-basics.md)、[Kubernetes 运维专题](./topics/kubernetes-operations.md)、[GitOps 交付专题](./topics/gitops-delivery.md)
+- 系统整理见 [配置管理专题](./topics/config-management.md)、[密钥管理专题](./topics/secrets-management.md)、[Python 包管理专题](./topics/python-package-management.md)、[打包与发布专题](./topics/packaging-release.md)、[部署与运维专题](./topics/deployment-operations.md)、[发布策略专题](./topics/deployment-strategies.md)、[Docker 专题](./topics/docker-basics.md)、[Kubernetes 运维专题](./topics/kubernetes-operations.md)、[GitOps 交付专题](./topics/gitops-delivery.md)
 
 ### 工程质量与协作
 
@@ -188,7 +198,8 @@
 - `mypy`：类型检查
 - `ruff`：lint 和格式化
 - `pre-commit`：提交前自动检查
-- 系统整理见 [代码质量专题](./topics/code-quality.md) 和 [CI/CD 专题](./topics/ci-cd.md)
+- `Hatch`：环境矩阵与构建脚本
+- 系统整理见 [代码质量专题](./topics/code-quality.md)、[CI/CD 专题](./topics/ci-cd.md)、[测试矩阵专题](./topics/test-matrix.md)
 
 ### 调度、消息和观测
 
@@ -197,10 +208,11 @@
 - `Kafka`：事件流和消息流
 - `RabbitMQ` / `NATS`：路由队列与轻量发布订阅
 - `Dramatiq` / `arq`：轻量任务队列
+- `psutil`：worker 与进程运行观测
 - `Webhook`：外部系统异步回调接入
 - `Outbox / Inbox`：一致性和去重
 - `logging` / `traceback`：日志和错误堆栈
-- 系统整理见 [任务调度专题](./topics/task-scheduling.md)、[任务队列架构专题](./topics/task-queue-architectures.md)、[消息系统专题](./topics/message-systems.md)、[流处理专题](./topics/stream-processing.md)、[Webhooks 专题](./topics/webhooks.md)、[事件驱动架构专题](./topics/event-driven-architecture.md)、[Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md)、[可观测性专题](./topics/observability.md)
+- 系统整理见 [任务调度专题](./topics/task-scheduling.md)、[任务队列架构专题](./topics/task-queue-architectures.md)、[Worker 运行治理专题](./topics/worker-runtime-operations.md)、[消息系统专题](./topics/message-systems.md)、[流处理专题](./topics/stream-processing.md)、[Webhooks 专题](./topics/webhooks.md)、[事件驱动架构专题](./topics/event-driven-architecture.md)、[Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md)、[可观测性专题](./topics/observability.md)
 
 ### 服务治理与 API 生产化
 
@@ -364,6 +376,10 @@
 - [streamlit：快速数据应用](./third_party/streamlit.md)
 - [openpyxl：Excel 读写](./third_party/openpyxl.md)
 - [pytest：测试框架](./third_party/pytest.md)
+- [uv：高速项目环境管理](./third_party/uv.md)
+- [Poetry：依赖与发布管理](./third_party/poetry.md)
+- [PDM：现代包管理](./third_party/pdm.md)
+- [Hatch：构建与环境矩阵](./third_party/hatch.md)
 - [mypy：静态类型检查](./third_party/mypy.md)
 - [ruff：lint 与格式化](./third_party/ruff.md)
 - [pre-commit：提交前检查](./third_party/pre_commit.md)
@@ -415,6 +431,8 @@
 - [Dagster：数据资产编排](./third_party/dagster.md)
 - [PyJWT：JWT 令牌处理](./third_party/pyjwt.md)
 - [argon2-cffi：密码哈希](./third_party/argon2_cffi.md)
+- [asyncpg：异步 PostgreSQL 驱动](./third_party/asyncpg.md)
+- [databases：异步数据库访问封装](./third_party/databases.md)
 - [PyArrow：Arrow 与 Parquet](./third_party/pyarrow.md)
 - [s3fs：对象存储文件系统](./third_party/s3fs.md)
 - [Polars：高性能 DataFrame](./third_party/polars.md)
@@ -445,6 +463,8 @@
 - [unstructured：多格式文档解析](./third_party/unstructured.md)
 - [OpenCV：计算机视觉处理](./third_party/opencv_python.md)
 - [ffmpeg-python：音视频处理](./third_party/ffmpeg_python.md)
+- [psutil：进程与系统状态](./third_party/psutil.md)
+- [watchfiles：文件监听与热重载](./third_party/watchfiles.md)
 - [Alembic：数据库迁移](./third_party/alembic.md)
 - [PyMySQL：纯 Python MySQL 驱动](./third_party/pymysql.md)
 - [mysqlclient：C 扩展 MySQL 驱动](./third_party/mysqlclient.md)
@@ -486,6 +506,11 @@
 - [部署与运维专题](./topics/deployment-operations.md)
 - [代码质量专题](./topics/code-quality.md)
 - [CI/CD 专题](./topics/ci-cd.md)
+- [Python 包管理专题](./topics/python-package-management.md)
+- [依赖治理专题](./topics/dependency-governance.md)
+- [开发环境热重载专题](./topics/dev-reload-workflows.md)
+- [Monorepo 与多包项目专题](./topics/monorepo-multipackage.md)
+- [测试矩阵专题](./topics/test-matrix.md)
 - [Docker 专题](./topics/docker-basics.md)
 - [缓存与队列专题](./topics/cache-queues.md)
 - [实时通信专题](./topics/realtime-communication.md)
@@ -496,7 +521,9 @@
 - [消息系统专题](./topics/message-systems.md)
 - [性能基准专题](./topics/benchmarking.md)
 - [测试进阶专题](./topics/testing-advanced.md)
+- [Worker 运行治理专题](./topics/worker-runtime-operations.md)
 - [SQLAlchemy 进阶专题](./topics/sqlalchemy-advanced.md)
+- [异步数据库专题](./topics/async-database-access.md)
 - [可观测性专题](./topics/observability.md)
 - [FastAPI 进阶专题](./topics/fastapi-advanced.md)
 - [认证与授权专题](./topics/auth-authorization.md)
@@ -556,7 +583,6 @@
 - [CQRS 专题](./topics/cqrs.md)
 - [Event Sourcing 专题](./topics/event-sourcing.md)
 - [Saga 模式专题](./topics/saga-patterns.md)
-- [消息系统专题](./topics/message-systems.md)
 - [流处理专题](./topics/stream-processing.md)
 - [变更数据捕获专题](./topics/change-data-capture.md)
 - [RabbitMQ 专题](./topics/rabbitmq-messaging.md)
@@ -575,7 +601,6 @@
 - [Redis 高级专题](./topics/redis-advanced.md)
 - [PDF 与 OCR 专题](./topics/pdf-ocr-processing.md)
 - [文档抽取专题](./topics/document-extraction.md)
-- [向量检索专题](./topics/vector-retrieval.md)
 - [Embedding 与 Rerank 专题](./topics/embeddings-reranking.md)
 - [传统机器学习专题](./topics/classical-ml.md)
 - [推理优化专题](./topics/inference-optimization.md)

@@ -35,5 +35,9 @@ project/
 - [configparser 与 tomllib](../stdlib/configparser_tomllib.md)
 - [pytest](../third_party/pytest.md)
 - [项目结构专题](./project-structure.md)
+- [Python 包管理专题](./python-package-management.md)
+- [依赖治理专题](./dependency-governance.md)
+- [uv](../third_party/uv.md)
+- [Poetry](../third_party/poetry.md)
 
 返回 [索引](../README.md)
