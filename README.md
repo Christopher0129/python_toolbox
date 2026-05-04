@@ -44,6 +44,11 @@
 | [时间与时钟测试专题](./topics/time-and-clock-testing.md) | [渐进式交付专题](./topics/progressive-delivery.md) | [特征服务专题](./topics/feature-serving.md) | [事故响应专题](./topics/incident-response.md) |
 | [API Fuzzing 专题](./topics/api-fuzzing.md) | [异步资源生命周期专题](./topics/async-resource-lifecycles.md) | [在线离线一致性专题](./topics/online-offline-consistency.md) | [审计日志专题](./topics/audit-logging.md) |
 | [连接池专题](./topics/connection-pooling.md) | [背压与流控专题](./topics/backpressure-and-flow-control.md) | [数据脱敏专题](./topics/data-masking.md) | [运行时配置专题](./topics/runtime-configuration.md) |
+| [事务与隔离级别专题](./topics/transaction-isolation.md) | [HTTP/2 与流式响应专题](./topics/http2-and-streaming.md) | [索引设计专题](./topics/index-design.md) | [故障演练专题](./topics/chaos-engineering.md) |
+| [Schema 迁移与回填专题](./topics/schema-migrations-backfill.md) | [代理与 Egress 治理专题](./topics/proxy-and-egress.md) | [查询计划分析专题](./topics/query-plan-analysis.md) | [Runbook 与运维手册专题](./topics/runbooks-and-ops.md) |
+| [分片与分区专题](./topics/sharding-partitioning.md) | [LLM 网关专题](./topics/llm-gateway.md) | [RAG 评测专题](./topics/rag-evaluation.md) | [容量规划专题](./topics/capacity-planning.md) |
+| [Prompt 工程专题](./topics/prompt-engineering.md) | [上下文工程专题](./topics/context-engineering.md) | [模型路由专题](./topics/model-routing.md) | [成本治理专题](./topics/cost-governance.md) |
+| [工具调用专题](./topics/tool-calling.md) | [Agent 编排专题](./topics/agent-orchestration.md) | [PyIceberg](./third_party/pyiceberg.md) | [LiteLLM](./third_party/litellm.md) |
 
 ## 学习路线
 
@@ -83,6 +88,7 @@
 | 做 MySQL 业务库开发 | [MySQL 开发专题](./topics/mysql-development.md) → [PyMySQL](./third_party/pymysql.md) / [mysqlclient](./third_party/mysqlclient.md) → [SQL 优化专题](./topics/sql-optimization.md) |
 | 做分析型日志与宽表查询 | [ClickHouse 分析专题](./topics/clickhouse-analytics.md) → [clickhouse-connect](./third_party/clickhouse_connect.md) → [列式数据处理专题](./topics/columnar-data-processing.md) |
 | 做 Spark / Lakehouse 数据平台 | [Spark 数据处理专题](./topics/spark-data-processing.md) → [PySpark](./third_party/pyspark.md) → [Delta Lake 专题](./topics/delta-lake.md) → [deltalake](./third_party/deltalake.md) |
+| 做数据库事务、索引和迁移治理 | [数据库开发专题](./topics/database-development.md) → [事务与隔离级别专题](./topics/transaction-isolation.md) → [索引设计专题](./topics/index-design.md) → [Schema 迁移与回填专题](./topics/schema-migrations-backfill.md) |
 | 做工程化爬虫 | [Web 抓取专题](./topics/web-scraping.md) → [Scrapy 爬取专题](./topics/scrapy-crawling.md) → [数据清洗专题](./topics/data-cleaning.md) → [任务调度专题](./topics/task-scheduling.md) |
 | 做高质量测试体系 | [测试与质量专题](./topics/testing-quality.md) → [测试进阶专题](./topics/testing-advanced.md) → [属性测试专题](./topics/property-based-testing.md) → [并行测试专题](./topics/parallel-testing.md) |
 | 做覆盖率、时间测试和接口模糊测试 | [coverage.py](./third_party/coverage.md) → [pytest-cov](./third_party/pytest_cov.md) → [时间与时钟测试专题](./topics/time-and-clock-testing.md) → [API Fuzzing 专题](./topics/api-fuzzing.md) |
@@ -93,6 +99,7 @@
 | 做现代分析工程与列式分析 | [Polars](./third_party/polars.md) → [DuckDB](./third_party/duckdb.md) → [列式数据处理专题](./topics/columnar-data-processing.md) → [分析工程专题](./topics/analytics-engineering.md) |
 | 做现代认证与权限治理 | [Token 认证专题](./topics/token-authentication.md) → [OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md) → [RBAC 与 ABAC 专题](./topics/rbac-abac.md) |
 | 做 RAG 和向量检索应用 | [向量检索专题](./topics/vector-retrieval.md) → [RAG 流水线专题](./topics/rag-pipelines.md) → [LangChain](./third_party/langchain.md) 或 [LlamaIndex](./third_party/llamaindex.md) |
+| 做 RAG 评测与上下文治理 | [RAG 流水线专题](./topics/rag-pipelines.md) → [RAG 评测专题](./topics/rag-evaluation.md) → [上下文工程专题](./topics/context-engineering.md) → [tiktoken](./third_party/tiktoken.md) |
 | 做文档知识库与 OCR 入库 | [PDF 与 OCR 专题](./topics/pdf-ocr-processing.md) → [文档抽取专题](./topics/document-extraction.md) → [PyMuPDF](./third_party/pymupdf.md) / [unstructured](./third_party/unstructured.md) |
 | 做向量召回与重排优化 | [向量检索专题](./topics/vector-retrieval.md) → [Embedding 与 Rerank 专题](./topics/embeddings-reranking.md) → [sentence-transformers](./third_party/sentence_transformers.md) |
 | 做数据契约与质量治理 | [数据质量测试专题](./topics/data-quality-testing.md) → [数据契约专题](./topics/data-contracts.md) → [Great Expectations](./third_party/great_expectations.md) → [Schema 演进专题](./topics/schema-evolution.md) |
@@ -103,6 +110,7 @@
 | 做 Iceberg / Lakehouse 元数据治理 | [Lakehouse 表格式专题](./topics/table-formats-lakehouse.md) → [PyIceberg](./third_party/pyiceberg.md) → [Lakehouse Catalog 专题](./topics/lakehouse-catalogs.md) |
 | 做密钥与多环境配置治理 | [配置管理专题](./topics/config-management.md) → [密钥管理专题](./topics/secrets-management.md) → [pydantic-settings](./third_party/pydantic_settings.md) → [hvac](./third_party/hvac.md) |
 | 做 Kubernetes 工程化交付 | [Kubernetes 运维专题](./topics/kubernetes-operations.md) → [Helm 与 Chart 专题](./topics/helm-charts.md) → [GitOps 交付专题](./topics/gitops-delivery.md) |
+| 做故障演练与值班手册 | [事故响应专题](./topics/incident-response.md) → [故障演练专题](./topics/chaos-engineering.md) → [Runbook 与运维手册专题](./topics/runbooks-and-ops.md) → [可观测性专题](./topics/observability.md) |
 | 做多包仓库与共享组件治理 | [项目结构专题](./topics/project-structure.md) → [Monorepo 与多包项目专题](./topics/monorepo-multipackage.md) → [PDM](./third_party/pdm.md) |
 | 做 worker 运行治理与调优 | [任务队列架构专题](./topics/task-queue-architectures.md) → [Worker 运行治理专题](./topics/worker-runtime-operations.md) → [psutil](./third_party/psutil.md) |
 | 做服务韧性与安全发布 | [限流专题](./topics/rate-limiting.md) → [幂等与重试专题](./topics/idempotency-retries.md) → [断路器与隔离专题](./topics/circuit-breakers-bulkheads.md) → [发布策略专题](./topics/deployment-strategies.md) |
@@ -113,6 +121,7 @@
 | 做供应链安全与制品治理 | [安全基础专题](./topics/security-basics.md) → [密码安全专题](./topics/password-security.md) → [供应链安全专题](./topics/supply-chain-security.md) |
 | 做依赖治理与升级策略 | [Python 包管理专题](./topics/python-package-management.md) → [依赖治理专题](./topics/dependency-governance.md) → [供应链安全专题](./topics/supply-chain-security.md) |
 | 做依赖安全与隐私治理 | [依赖扫描专题](./topics/dependency-scanning.md) → [Bandit](./third_party/bandit.md) / [pip-audit](./third_party/pip_audit.md) → [审计日志专题](./topics/audit-logging.md) → [隐私治理专题](./topics/privacy-governance.md) |
+| 做 LLM 网关、路由与 Agent 编排 | [LLM 网关专题](./topics/llm-gateway.md) → [模型路由专题](./topics/model-routing.md) → [工具调用专题](./topics/tool-calling.md) → [Agent 编排专题](./topics/agent-orchestration.md) |
 
 ## 按任务查找
 
@@ -209,7 +218,7 @@
 - `uv` / `Poetry` / `PDM` / `Hatch`：项目环境、构建与依赖管理
 - `Helm` / `Kubernetes`：容器编排与模板化部署
 - `ansible-runner` / `python-terraform`：基础设施自动化入口
-- 系统整理见 [配置管理专题](./topics/config-management.md)、[密钥管理专题](./topics/secrets-management.md)、[Python 包管理专题](./topics/python-package-management.md)、[打包与发布专题](./topics/packaging-release.md)、[部署与运维专题](./topics/deployment-operations.md)、[发布策略专题](./topics/deployment-strategies.md)、[Docker 专题](./topics/docker-basics.md)、[Kubernetes 运维专题](./topics/kubernetes-operations.md)、[GitOps 交付专题](./topics/gitops-delivery.md)
+- 系统整理见 [配置管理专题](./topics/config-management.md)、[密钥管理专题](./topics/secrets-management.md)、[Python 包管理专题](./topics/python-package-management.md)、[打包与发布专题](./topics/packaging-release.md)、[部署与运维专题](./topics/deployment-operations.md)、[发布策略专题](./topics/deployment-strategies.md)、[Docker 专题](./topics/docker-basics.md)、[Kubernetes 运维专题](./topics/kubernetes-operations.md)、[GitOps 交付专题](./topics/gitops-delivery.md)、[Runbook 与运维手册专题](./topics/runbooks-and-ops.md)、[容量规划专题](./topics/capacity-planning.md)
 
 ### 工程质量与协作
 
@@ -253,7 +262,7 @@
 - `Unleash`：特性开关与灰度
 - `grpcio` / `grpcio-tools`：RPC 接口与代码生成
 - `aiofiles`：异步文件边界处理
-- 系统整理见 [FastAPI 进阶专题](./topics/fastapi-advanced.md)、[认证与授权专题](./topics/auth-authorization.md)、[健康检查与指标专题](./topics/health-metrics.md)、[限流专题](./topics/rate-limiting.md)、[幂等与重试专题](./topics/idempotency-retries.md)、[断路器与隔离专题](./topics/circuit-breakers-bulkheads.md)、[API 版本治理专题](./topics/api-versioning.md)、[OpenAPI 治理专题](./topics/openapi-governance.md)、[特性开关专题](./topics/feature-flags.md)、[gRPC 进阶专题](./topics/grpc-advanced.md)、[API 网关模式专题](./topics/api-gateway-patterns.md)、[服务发现专题](./topics/service-discovery.md)、[渐进式交付专题](./topics/progressive-delivery.md)、[异步资源生命周期专题](./topics/async-resource-lifecycles.md)、[连接池专题](./topics/connection-pooling.md)
+- 系统整理见 [FastAPI 进阶专题](./topics/fastapi-advanced.md)、[认证与授权专题](./topics/auth-authorization.md)、[健康检查与指标专题](./topics/health-metrics.md)、[限流专题](./topics/rate-limiting.md)、[幂等与重试专题](./topics/idempotency-retries.md)、[断路器与隔离专题](./topics/circuit-breakers-bulkheads.md)、[API 版本治理专题](./topics/api-versioning.md)、[OpenAPI 治理专题](./topics/openapi-governance.md)、[特性开关专题](./topics/feature-flags.md)、[gRPC 进阶专题](./topics/grpc-advanced.md)、[HTTP/2 与流式响应专题](./topics/http2-and-streaming.md)、[代理与 Egress 治理专题](./topics/proxy-and-egress.md)、[API 网关模式专题](./topics/api-gateway-patterns.md)、[服务发现专题](./topics/service-discovery.md)、[渐进式交付专题](./topics/progressive-delivery.md)、[异步资源生命周期专题](./topics/async-resource-lifecycles.md)、[连接池专题](./topics/connection-pooling.md)
 
 ### 身份、权限与安全边界
 
@@ -279,7 +288,7 @@
 - `Delta Lake` / `PyIceberg` / `Schema Registry`：Lakehouse 表和流式契约治理
 - `fastparquet`：轻量 Parquet 读写
 - `qdrant-client`：向量检索客户端
-- 系统整理见 [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)、[列式数据处理专题](./topics/columnar-data-processing.md)、[分析工程专题](./topics/analytics-engineering.md)、[数据契约专题](./topics/data-contracts.md)、[实验跟踪专题](./topics/experiment-tracking.md)、[模型注册专题](./topics/model-registry.md)、[特征库专题](./topics/feature-stores.md)、[特征服务专题](./topics/feature-serving.md)、[模型评估专题](./topics/ml-evaluation.md)、[在线离线一致性专题](./topics/online-offline-consistency.md)、[Spark 数据处理专题](./topics/spark-data-processing.md)、[Delta Lake 专题](./topics/delta-lake.md)、[Lakehouse Catalog 专题](./topics/lakehouse-catalogs.md)、[流处理专题](./topics/stream-processing.md)
+- 系统整理见 [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)、[列式数据处理专题](./topics/columnar-data-processing.md)、[分析工程专题](./topics/analytics-engineering.md)、[数据契约专题](./topics/data-contracts.md)、[实验跟踪专题](./topics/experiment-tracking.md)、[模型注册专题](./topics/model-registry.md)、[特征库专题](./topics/feature-stores.md)、[特征服务专题](./topics/feature-serving.md)、[模型评估专题](./topics/ml-evaluation.md)、[在线离线一致性专题](./topics/online-offline-consistency.md)、[Spark 数据处理专题](./topics/spark-data-processing.md)、[Delta Lake 专题](./topics/delta-lake.md)、[Lakehouse Catalog 专题](./topics/lakehouse-catalogs.md)、[流处理专题](./topics/stream-processing.md)、[成本治理专题](./topics/cost-governance.md)
 
 ### 数据格式、序列化与兼容治理
 
@@ -295,10 +304,21 @@
 - `FAISS`：本地向量检索原型
 - `Qdrant` / `Milvus`：服务化向量存储
 - `LangChain` / `LlamaIndex`：RAG 编排
+- `tiktoken`：token 预算和上下文窗口估算
+- `Ragas`：RAG 质量评测
 - `sentence-transformers`：向量生成与重排
 - `unstructured`：多格式文档切块
 - `PyArrow` / Parquet：文档和数据管道中的列式交换
-- 系统整理见 [向量检索专题](./topics/vector-retrieval.md)、[Embedding 与 Rerank 专题](./topics/embeddings-reranking.md)、[RAG 流水线专题](./topics/rag-pipelines.md)、[文档抽取专题](./topics/document-extraction.md)、[Parquet 与 Arrow 专题](./topics/parquet-arrow.md)
+- 系统整理见 [向量检索专题](./topics/vector-retrieval.md)、[Embedding 与 Rerank 专题](./topics/embeddings-reranking.md)、[RAG 流水线专题](./topics/rag-pipelines.md)、[RAG 评测专题](./topics/rag-evaluation.md)、[上下文工程专题](./topics/context-engineering.md)、[Prompt 工程专题](./topics/prompt-engineering.md)、[文档抽取专题](./topics/document-extraction.md)、[Parquet 与 Arrow 专题](./topics/parquet-arrow.md)
+
+### AI 与 Agent 工程
+
+- `tiktoken`：token 计数与上下文预算
+- `LiteLLM`：多模型统一调用与路由
+- `LangGraph`：状态化 Agent / workflow 编排
+- `Ragas`：RAG 系统质量评测
+- `LangChain` / `LlamaIndex`：检索、工具与流程组织
+- 系统整理见 [Prompt 工程专题](./topics/prompt-engineering.md)、[上下文工程专题](./topics/context-engineering.md)、[工具调用专题](./topics/tool-calling.md)、[Agent 编排专题](./topics/agent-orchestration.md)、[模型路由专题](./topics/model-routing.md)、[LLM 网关专题](./topics/llm-gateway.md)、[成本治理专题](./topics/cost-governance.md)
 
 ### 测试、调试和排错
 
@@ -514,9 +534,13 @@
 - [FAISS：本地向量检索](./third_party/faiss.md)
 - [pymilvus：Milvus 客户端](./third_party/pymilvus.md)
 - [LangChain：LLM 应用编排](./third_party/langchain.md)
+- [LangGraph：Agent 图编排](./third_party/langgraph.md)
+- [LiteLLM：多模型统一调用与路由](./third_party/litellm.md)
 - [LlamaIndex：文档检索编排](./third_party/llamaindex.md)
 - [qdrant-client：向量检索客户端](./third_party/qdrant_client.md)
 - [sentence-transformers：向量与重排模型](./third_party/sentence_transformers.md)
+- [tiktoken：token 计数与预算](./third_party/tiktoken.md)
+- [Ragas：RAG 质量评测](./third_party/ragas.md)
 - [PyMuPDF：PDF 提取与渲染](./third_party/pymupdf.md)
 - [pypdf：轻量 PDF 处理](./third_party/pypdf.md)
 - [pytesseract：OCR 识别](./third_party/pytesseract.md)
@@ -594,6 +618,11 @@
 - [Worker 运行治理专题](./topics/worker-runtime-operations.md)
 - [SQLAlchemy 进阶专题](./topics/sqlalchemy-advanced.md)
 - [异步数据库专题](./topics/async-database-access.md)
+- [事务与隔离级别专题](./topics/transaction-isolation.md)
+- [索引设计专题](./topics/index-design.md)
+- [查询计划分析专题](./topics/query-plan-analysis.md)
+- [Schema 迁移与回填专题](./topics/schema-migrations-backfill.md)
+- [分片与分区专题](./topics/sharding-partitioning.md)
 - [连接池专题](./topics/connection-pooling.md)
 - [可观测性专题](./topics/observability.md)
 - [FastAPI 进阶专题](./topics/fastapi-advanced.md)
@@ -601,6 +630,8 @@
 - [服务中间件专题](./topics/service-middleware.md)
 - [健康检查与指标专题](./topics/health-metrics.md)
 - [OpenAPI 治理专题](./topics/openapi-governance.md)
+- [HTTP/2 与流式响应专题](./topics/http2-and-streaming.md)
+- [代理与 Egress 治理专题](./topics/proxy-and-egress.md)
 - [端到端测试专题](./topics/end-to-end-testing.md)
 - [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)
 - [向量检索专题](./topics/vector-retrieval.md)
@@ -628,6 +659,14 @@
 - [Lakehouse 表格式专题](./topics/table-formats-lakehouse.md)
 - [Lakehouse Catalog 专题](./topics/lakehouse-catalogs.md)
 - [RAG 流水线专题](./topics/rag-pipelines.md)
+- [RAG 评测专题](./topics/rag-evaluation.md)
+- [Prompt 工程专题](./topics/prompt-engineering.md)
+- [上下文工程专题](./topics/context-engineering.md)
+- [工具调用专题](./topics/tool-calling.md)
+- [Agent 编排专题](./topics/agent-orchestration.md)
+- [模型路由专题](./topics/model-routing.md)
+- [LLM 网关专题](./topics/llm-gateway.md)
+- [成本治理专题](./topics/cost-governance.md)
 - [Kafka 重试与 DLQ 专题](./topics/kafka-retry-dlq.md)
 - [告警与 SLO 专题](./topics/alerting-slos.md)
 - [安全基础专题](./topics/security-basics.md)
@@ -657,6 +696,9 @@
 - [服务发现专题](./topics/service-discovery.md)
 - [运行时配置专题](./topics/runtime-configuration.md)
 - [事故响应专题](./topics/incident-response.md)
+- [故障演练专题](./topics/chaos-engineering.md)
+- [Runbook 与运维手册专题](./topics/runbooks-and-ops.md)
+- [容量规划专题](./topics/capacity-planning.md)
 - [特性开关专题](./topics/feature-flags.md)
 - [断路器与隔离专题](./topics/circuit-breakers-bulkheads.md)
 - [API 网关模式专题](./topics/api-gateway-patterns.md)

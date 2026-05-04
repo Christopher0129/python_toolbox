@@ -133,6 +133,8 @@ with ThreadPoolExecutor(max_workers=5) as pool:
 - [requests](../third_party/requests.md)
 - [httpx](../third_party/httpx.md)
 - [aiohttp](../third_party/aiohttp.md)
+- [HTTP/2 与流式响应专题](./http2-and-streaming.md)
+- [代理与 Egress 治理专题](./proxy-and-egress.md)
 - [异常类型合集](../basics/exception-types.md)
 
 返回 [索引](../README.md)

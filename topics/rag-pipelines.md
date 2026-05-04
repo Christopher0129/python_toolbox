@@ -24,6 +24,8 @@
 
 - [LangChain](../third_party/langchain.md)
 - [LlamaIndex](../third_party/llamaindex.md)
+- [tiktoken](../third_party/tiktoken.md)
+- [Ragas](../third_party/ragas.md)
 - [FAISS](../third_party/faiss.md)
 - [qdrant-client](../third_party/qdrant_client.md)
 - [pymilvus](../third_party/pymilvus.md)
@@ -31,5 +33,8 @@
 - [unstructured](../third_party/unstructured.md)
 - [文档抽取专题](./document-extraction.md)
 - [Embedding 与 Rerank 专题](./embeddings-reranking.md)
+- [上下文工程专题](./context-engineering.md)
+- [Prompt 工程专题](./prompt-engineering.md)
+- [RAG 评测专题](./rag-evaluation.md)
 
 返回 [索引](../README.md)

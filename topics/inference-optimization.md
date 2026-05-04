@@ -28,6 +28,8 @@
 - [ONNX Runtime](../third_party/onnxruntime.md)
 - [模型服务专题](./model-serving.md)
 - [性能基准专题](./benchmarking.md)
+- [容量规划专题](./capacity-planning.md)
+- [成本治理专题](./cost-governance.md)
 - [Triton 推理服务专题](./triton-inference-serving.md)
 
 返回 [索引](../README.md)

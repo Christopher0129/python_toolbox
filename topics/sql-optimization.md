@@ -20,6 +20,9 @@
 
 - [SQLAlchemy 2.x 基础](../database/sqlalchemy.md)
 - [数据库开发专题](./database-development.md)
+- [索引设计专题](./index-design.md)
+- [查询计划分析专题](./query-plan-analysis.md)
+- [事务与隔离级别专题](./transaction-isolation.md)
 - [性能与调试专题](./performance-debugging.md)
 
 返回 [索引](../README.md)

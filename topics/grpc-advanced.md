@@ -28,6 +28,8 @@
 - [grpcio](../third_party/grpc.md)
 - [grpcio-tools](../third_party/grpcio_tools.md)
 - [API 开发专题](./api-development.md)
+- [HTTP/2 与流式响应专题](./http2-and-streaming.md)
+- [代理与 Egress 治理专题](./proxy-and-egress.md)
 - [Triton 推理服务专题](./triton-inference-serving.md)
 
 返回 [索引](../README.md)
