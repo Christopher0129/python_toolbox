@@ -48,6 +48,14 @@
 - [端到端测试专题](./topics/end-to-end-testing.md)
 - [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)
 - [向量检索专题](./topics/vector-retrieval.md)
+- [属性测试专题](./topics/property-based-testing.md)
+- [并行测试专题](./topics/parallel-testing.md)
+- [遥测与链路追踪专题](./topics/telemetry-tracing.md)
+- [错误监控专题](./topics/error-monitoring.md)
+- [列式数据处理专题](./topics/columnar-data-processing.md)
+- [分析工程专题](./topics/analytics-engineering.md)
+- [Token 认证专题](./topics/token-authentication.md)
+- [数据质量测试专题](./topics/data-quality-testing.md)
 - [安全基础专题](./topics/security-basics.md)
 - [Excel 自动化专题](./topics/excel-automation.md)
 - [数据管道专题](./topics/data-pipelines.md)
@@ -77,6 +85,8 @@
 | 做调度、流处理和服务观测 | [APScheduler](./third_party/apscheduler.md) → [kafka-python](./third_party/kafka_python.md) → [消息系统专题](./topics/message-systems.md) → [可观测性专题](./topics/observability.md) |
 | 做服务治理和生产可观测 API | [FastAPI 入门](./frameworks/fastapi.md) → [FastAPI 进阶专题](./topics/fastapi-advanced.md) → [认证与授权专题](./topics/auth-authorization.md) → [健康检查与指标专题](./topics/health-metrics.md) |
 | 做数据平台和语义检索 | [数据管道专题](./topics/data-pipelines.md) → [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md) → [向量检索专题](./topics/vector-retrieval.md) |
+| 做高质量测试体系 | [测试与质量专题](./topics/testing-quality.md) → [测试进阶专题](./topics/testing-advanced.md) → [属性测试专题](./topics/property-based-testing.md) → [并行测试专题](./topics/parallel-testing.md) |
+| 做现代分析工程与列式分析 | [Polars](./third_party/polars.md) → [DuckDB](./third_party/duckdb.md) → [列式数据处理专题](./topics/columnar-data-processing.md) → [分析工程专题](./topics/analytics-engineering.md) |
 
 ## 按任务查找
 
@@ -184,6 +194,14 @@
 - `prometheus-client`：指标暴露
 - `structlog`：结构化日志
 - 系统整理见 [FastAPI 进阶专题](./topics/fastapi-advanced.md)、[认证与授权专题](./topics/auth-authorization.md)、[健康检查与指标专题](./topics/health-metrics.md)
+
+### 数据工程与分析平台
+
+- `Polars` / `DuckDB`：列式本地分析
+- `dbt`：分析工程与数据测试
+- `Airflow`：任务编排
+- `qdrant-client`：向量检索客户端
+- 系统整理见 [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)、[列式数据处理专题](./topics/columnar-data-processing.md)、[分析工程专题](./topics/analytics-engineering.md)
 
 ### 测试、调试和排错
 
@@ -306,11 +324,19 @@
 - [Selenium：浏览器自动化补充](./third_party/selenium.md)
 - [testcontainers：容器化测试依赖](./third_party/testcontainers.md)
 - [pytest-benchmark：性能基准测试](./third_party/pytest_benchmark.md)
+- [pytest-xdist：并行测试](./third_party/pytest_xdist.md)
+- [Hypothesis：属性测试](./third_party/hypothesis.md)
 - [grpcio：RPC 通信](./third_party/grpc.md)
 - [gunicorn 与 uvicorn：服务部署入口](./third_party/gunicorn_uvicorn.md)
 - [structlog：结构化日志](./third_party/structlog.md)
 - [prometheus-client：服务指标](./third_party/prometheus_client.md)
+- [OpenTelemetry：链路追踪与指标](./third_party/opentelemetry.md)
+- [sentry-sdk：错误监控](./third_party/sentry_sdk.md)
 - [Airflow：任务编排](./third_party/airflow.md)
+- [PyJWT：JWT 令牌处理](./third_party/pyjwt.md)
+- [Polars：高性能 DataFrame](./third_party/polars.md)
+- [DuckDB：本地分析型 SQL](./third_party/duckdb.md)
+- [dbt：分析工程](./third_party/dbt.md)
 - [qdrant-client：向量检索客户端](./third_party/qdrant_client.md)
 - [Alembic：数据库迁移](./third_party/alembic.md)
 
@@ -370,6 +396,14 @@
 - [端到端测试专题](./topics/end-to-end-testing.md)
 - [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)
 - [向量检索专题](./topics/vector-retrieval.md)
+- [属性测试专题](./topics/property-based-testing.md)
+- [并行测试专题](./topics/parallel-testing.md)
+- [遥测与链路追踪专题](./topics/telemetry-tracing.md)
+- [错误监控专题](./topics/error-monitoring.md)
+- [列式数据处理专题](./topics/columnar-data-processing.md)
+- [分析工程专题](./topics/analytics-engineering.md)
+- [Token 认证专题](./topics/token-authentication.md)
+- [数据质量测试专题](./topics/data-quality-testing.md)
 - [安全基础专题](./topics/security-basics.md)
 - [Excel 自动化专题](./topics/excel-automation.md)
 - [数据管道专题](./topics/data-pipelines.md)
