@@ -4,92 +4,31 @@
 
 ## 快速入口
 
-- [函数速查索引](./函数索引.md)
-- [常用内置函数](./builtins/common-builtins.md)
-- [语法与数据类型](./basics/syntax-data-types.md)
-- [控制流](./basics/control-flow.md)
-- [异常类型合集](./basics/exception-types.md)
-- [常见 Python 实战脚本](./examples/common_cases.md)
-- [Python 小项目模板](./examples/mini_projects.md)
-- [算法与数据结构专题](./topics/algorithms-data-structures.md)
-- [数据可视化专题](./topics/data-visualization.md)
-- [数据清洗专题](./topics/data-cleaning.md)
-- [文件处理专题](./topics/file-processing.md)
-- [命令行自动化专题](./topics/automation-cli.md)
-- [接口测试专题](./topics/api-testing.md)
-- [网络编程专题](./topics/network-programming.md)
-- [Web 抓取专题](./topics/web-scraping.md)
-- [性能与调试专题](./topics/performance-debugging.md)
-- [数据库开发专题](./topics/database-development.md)
-- [项目结构专题](./topics/project-structure.md)
-- [异步编程专题](./topics/async-programming.md)
-- [API 开发专题](./topics/api-development.md)
-- [配置管理专题](./topics/config-management.md)
-- [打包与发布专题](./topics/packaging-release.md)
-- [部署与运维专题](./topics/deployment-operations.md)
-- [代码质量专题](./topics/code-quality.md)
-- [CI/CD 专题](./topics/ci-cd.md)
-- [Docker 专题](./topics/docker-basics.md)
-- [缓存与队列专题](./topics/cache-queues.md)
-- [实时通信专题](./topics/realtime-communication.md)
-- [Linux 与 Python 运维专题](./topics/linux-python-ops.md)
-- [SQL 优化专题](./topics/sql-optimization.md)
-- [浏览器自动化专题](./topics/browser-automation.md)
-- [任务调度专题](./topics/task-scheduling.md)
-- [消息系统专题](./topics/message-systems.md)
-- [性能基准专题](./topics/benchmarking.md)
-- [测试进阶专题](./topics/testing-advanced.md)
-- [SQLAlchemy 进阶专题](./topics/sqlalchemy-advanced.md)
-- [可观测性专题](./topics/observability.md)
-- [FastAPI 进阶专题](./topics/fastapi-advanced.md)
-- [认证与授权专题](./topics/auth-authorization.md)
-- [服务中间件专题](./topics/service-middleware.md)
-- [健康检查与指标专题](./topics/health-metrics.md)
-- [端到端测试专题](./topics/end-to-end-testing.md)
-- [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)
-- [向量检索专题](./topics/vector-retrieval.md)
-- [属性测试专题](./topics/property-based-testing.md)
-- [并行测试专题](./topics/parallel-testing.md)
-- [遥测与链路追踪专题](./topics/telemetry-tracing.md)
-- [错误监控专题](./topics/error-monitoring.md)
-- [列式数据处理专题](./topics/columnar-data-processing.md)
-- [分析工程专题](./topics/analytics-engineering.md)
-- [Token 认证专题](./topics/token-authentication.md)
-- [数据质量测试专题](./topics/data-quality-testing.md)
-- [OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md)
-- [RBAC 与 ABAC 专题](./topics/rbac-abac.md)
-- [策略引擎专题](./topics/policy-engines.md)
-- [数据契约专题](./topics/data-contracts.md)
-- [实验跟踪专题](./topics/experiment-tracking.md)
-- [序列化性能专题](./topics/serialization-performance.md)
-- [API 版本治理专题](./topics/api-versioning.md)
-- [依赖注入专题](./topics/dependency-injection.md)
-- [FastAPI WebSocket 与 SSE 专题](./topics/fastapi-websocket-sse.md)
-- [FastAPI 生命周期与后台任务专题](./topics/fastapi-lifespan-background.md)
-- [Parquet 与 Arrow 专题](./topics/parquet-arrow.md)
-- [Lakehouse 表格式专题](./topics/table-formats-lakehouse.md)
-- [RAG 流水线专题](./topics/rag-pipelines.md)
-- [Kafka 重试与 DLQ 专题](./topics/kafka-retry-dlq.md)
-- [告警与 SLO 专题](./topics/alerting-slos.md)
-- [安全基础专题](./topics/security-basics.md)
-- [Excel 自动化专题](./topics/excel-automation.md)
-- [数据管道专题](./topics/data-pipelines.md)
-- [备份与归档专题](./topics/backup-archiving.md)
-- [图像处理专题](./topics/image-processing.md)
-- [限流专题](./topics/rate-limiting.md)
-- [幂等与重试专题](./topics/idempotency-retries.md)
-- [Schema 演进专题](./topics/schema-evolution.md)
-- [模型注册专题](./topics/model-registry.md)
-- [特征库专题](./topics/feature-stores.md)
-- [契约测试专题](./topics/contract-testing.md)
-- [Webhooks 专题](./topics/webhooks.md)
-- [密钥管理专题](./topics/secrets-management.md)
-- [发布策略专题](./topics/deployment-strategies.md)
-- [特性开关专题](./topics/feature-flags.md)
-- [断路器与隔离专题](./topics/circuit-breakers-bulkheads.md)
-- [Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md)
-- [消费者驱动契约专题](./topics/consumer-driven-contracts.md)
-- [事件驱动架构专题](./topics/event-driven-architecture.md)
+| 基础与工程 | Web 与服务 | 数据与存储 | 架构与治理 |
+| --- | --- | --- | --- |
+| [函数速查索引](./函数索引.md) | [API 开发专题](./topics/api-development.md) | [数据库开发专题](./topics/database-development.md) | [可观测性专题](./topics/observability.md) |
+| [常用内置函数](./builtins/common-builtins.md) | [FastAPI 进阶专题](./topics/fastapi-advanced.md) | [PostgreSQL 开发专题](./topics/postgresql-development.md) | [健康检查与指标专题](./topics/health-metrics.md) |
+| [语法与数据类型](./basics/syntax-data-types.md) | [认证与授权专题](./topics/auth-authorization.md) | [MongoDB 开发专题](./topics/mongodb-development.md) | [认证与授权专题](./topics/auth-authorization.md) |
+| [控制流](./basics/control-flow.md) | [服务中间件专题](./topics/service-middleware.md) | [ClickHouse 分析专题](./topics/clickhouse-analytics.md) | [API 版本治理专题](./topics/api-versioning.md) |
+| [异常类型合集](./basics/exception-types.md) | [接口测试专题](./topics/api-testing.md) | [对象存储专题](./topics/object-storage.md) | [契约测试专题](./topics/contract-testing.md) |
+| [常见 Python 实战脚本](./examples/common_cases.md) | [GraphQL API 专题](./topics/graphql-apis.md) | [数据湖存储专题](./topics/data-lake-storage.md) | [消费者驱动契约专题](./topics/consumer-driven-contracts.md) |
+| [Python 小项目模板](./examples/mini_projects.md) | [FastAPI WebSocket 与 SSE 专题](./topics/fastapi-websocket-sse.md) | [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md) | [事件驱动架构专题](./topics/event-driven-architecture.md) |
+| [项目结构专题](./topics/project-structure.md) | [FastAPI 生命周期与后台任务专题](./topics/fastapi-lifespan-background.md) | [数据管道专题](./topics/data-pipelines.md) | [Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md) |
+| [代码质量专题](./topics/code-quality.md) | [Webhooks 专题](./topics/webhooks.md) | [分析工程专题](./topics/analytics-engineering.md) | [限流专题](./topics/rate-limiting.md) |
+| [CI/CD 专题](./topics/ci-cd.md) | [浏览器自动化专题](./topics/browser-automation.md) | [列式数据处理专题](./topics/columnar-data-processing.md) | [幂等与重试专题](./topics/idempotency-retries.md) |
+| [Docker 专题](./topics/docker-basics.md) | [Web 抓取专题](./topics/web-scraping.md) | [数据契约专题](./topics/data-contracts.md) | [断路器与隔离专题](./topics/circuit-breakers-bulkheads.md) |
+| [性能与调试专题](./topics/performance-debugging.md) | [Scrapy 爬取专题](./topics/scrapy-crawling.md) | [数据质量测试专题](./topics/data-quality-testing.md) | [策略引擎专题](./topics/policy-engines.md) |
+| [测试进阶专题](./topics/testing-advanced.md) | [网络编程专题](./topics/network-programming.md) | [实验跟踪专题](./topics/experiment-tracking.md) | [密钥管理专题](./topics/secrets-management.md) |
+| [并行测试专题](./topics/parallel-testing.md) | [异步编程专题](./topics/async-programming.md) | [模型注册专题](./topics/model-registry.md) | [发布策略专题](./topics/deployment-strategies.md) |
+| [命令行自动化专题](./topics/automation-cli.md) | [实时通信专题](./topics/realtime-communication.md) | [特征库专题](./topics/feature-stores.md) | [特性开关专题](./topics/feature-flags.md) |
+| [配置管理专题](./topics/config-management.md) | [消息系统专题](./topics/message-systems.md) | [搜索系统专题](./topics/search-systems.md) | [Schema 演进专题](./topics/schema-evolution.md) |
+| [Excel 自动化专题](./topics/excel-automation.md) | [任务调度专题](./topics/task-scheduling.md) | [向量检索专题](./topics/vector-retrieval.md) | [安全基础专题](./topics/security-basics.md) |
+| [图像处理专题](./topics/image-processing.md) | [RAG 流水线专题](./topics/rag-pipelines.md) | [Parquet 与 Arrow 专题](./topics/parquet-arrow.md) | [告警与 SLO 专题](./topics/alerting-slos.md) |
+| [Linux 与 Python 运维专题](./topics/linux-python-ops.md) | [Token 认证专题](./topics/token-authentication.md) | [Lakehouse 表格式专题](./topics/table-formats-lakehouse.md) | [遥测与链路追踪专题](./topics/telemetry-tracing.md) |
+| [算法与数据结构专题](./topics/algorithms-data-structures.md) | [OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md) | [序列化性能专题](./topics/serialization-performance.md) | [错误监控专题](./topics/error-monitoring.md) |
+| [数据可视化专题](./topics/data-visualization.md) | [RBAC 与 ABAC 专题](./topics/rbac-abac.md) | [SQLAlchemy 进阶专题](./topics/sqlalchemy-advanced.md) | [依赖注入专题](./topics/dependency-injection.md) |
+| [数据清洗专题](./topics/data-cleaning.md) | [缓存与队列专题](./topics/cache-queues.md) | [SQL 优化专题](./topics/sql-optimization.md) | [备份与归档专题](./topics/backup-archiving.md) |
+| [文件处理专题](./topics/file-processing.md) | [端到端测试专题](./topics/end-to-end-testing.md) | [性能基准专题](./topics/benchmarking.md) | [部署与运维专题](./topics/deployment-operations.md) |
 
 ## 学习路线
 
@@ -113,10 +52,17 @@
 | 做浏览器自动化与端到端测试 | [Playwright](./third_party/playwright.md) → [浏览器自动化专题](./topics/browser-automation.md) → [测试进阶专题](./topics/testing-advanced.md) |
 | 做调度、流处理和服务观测 | [APScheduler](./third_party/apscheduler.md) → [kafka-python](./third_party/kafka_python.md) → [消息系统专题](./topics/message-systems.md) → [可观测性专题](./topics/observability.md) |
 | 做服务治理和生产可观测 API | [FastAPI 入门](./frameworks/fastapi.md) → [FastAPI 进阶专题](./topics/fastapi-advanced.md) → [认证与授权专题](./topics/auth-authorization.md) → [健康检查与指标专题](./topics/health-metrics.md) |
+| 做 GraphQL 服务 | [GraphQL API 专题](./topics/graphql-apis.md) → [Graphene](./third_party/graphene.md) 或 [Strawberry GraphQL](./third_party/strawberry_graphql.md) → [契约测试专题](./topics/contract-testing.md) |
 | 做 API 契约和兼容治理 | [API 开发专题](./topics/api-development.md) → [API 版本治理专题](./topics/api-versioning.md) → [契约测试专题](./topics/contract-testing.md) → [Schema 演进专题](./topics/schema-evolution.md) |
 | 做回调与异步事件接入 | [Webhooks 专题](./topics/webhooks.md) → [幂等与重试专题](./topics/idempotency-retries.md) → [消息系统专题](./topics/message-systems.md) → [Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md) |
 | 做权限与策略抽象 | [认证与授权专题](./topics/auth-authorization.md) → [RBAC 与 ABAC 专题](./topics/rbac-abac.md) → [策略引擎专题](./topics/policy-engines.md) → [Casbin](./third_party/casbin.md) |
 | 做数据平台和语义检索 | [数据管道专题](./topics/data-pipelines.md) → [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md) → [向量检索专题](./topics/vector-retrieval.md) |
+| 做对象存储与数据湖 | [对象存储专题](./topics/object-storage.md) → [boto3](./third_party/boto3.md) 或 [MinIO](./third_party/minio.md) → [数据湖存储专题](./topics/data-lake-storage.md) → [Lakehouse 表格式专题](./topics/table-formats-lakehouse.md) |
+| 做搜索与混合检索 | [搜索系统专题](./topics/search-systems.md) → [Elasticsearch](./third_party/elasticsearch.md) 或 [opensearch-py](./third_party/opensearch_py.md) → [向量检索专题](./topics/vector-retrieval.md) |
+| 做 MongoDB 异步服务 | [MongoDB 开发专题](./topics/mongodb-development.md) → [PyMongo](./third_party/pymongo.md) / [Motor](./third_party/motor.md) → [Beanie](./third_party/beanie.md) |
+| 做 PostgreSQL 类型化后端 | [PostgreSQL 开发专题](./topics/postgresql-development.md) → [psycopg](./third_party/psycopg.md) → [SQLModel](./third_party/sqlmodel.md) → [API 开发专题](./topics/api-development.md) |
+| 做分析型日志与宽表查询 | [ClickHouse 分析专题](./topics/clickhouse-analytics.md) → [clickhouse-connect](./third_party/clickhouse_connect.md) → [列式数据处理专题](./topics/columnar-data-processing.md) |
+| 做工程化爬虫 | [Web 抓取专题](./topics/web-scraping.md) → [Scrapy 爬取专题](./topics/scrapy-crawling.md) → [数据清洗专题](./topics/data-cleaning.md) → [任务调度专题](./topics/task-scheduling.md) |
 | 做高质量测试体系 | [测试与质量专题](./topics/testing-quality.md) → [测试进阶专题](./topics/testing-advanced.md) → [属性测试专题](./topics/property-based-testing.md) → [并行测试专题](./topics/parallel-testing.md) |
 | 做现代分析工程与列式分析 | [Polars](./third_party/polars.md) → [DuckDB](./third_party/duckdb.md) → [列式数据处理专题](./topics/columnar-data-processing.md) → [分析工程专题](./topics/analytics-engineering.md) |
 | 做现代认证与权限治理 | [Token 认证专题](./topics/token-authentication.md) → [OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md) → [RBAC 与 ABAC 专题](./topics/rbac-abac.md) |

@@ -24,5 +24,6 @@
 - [模型注册专题](./model-registry.md)
 - [特征库专题](./feature-stores.md)
 - [特性开关专题](./feature-flags.md)
+- [传统机器学习专题](./classical-ml.md)
 
 返回 [索引](../README.md)

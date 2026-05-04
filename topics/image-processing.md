@@ -15,11 +15,15 @@
 - PNG/JPG 格式转换
 - 图片尺寸标准化
 - 扫描目录后批量重命名
+- 视频帧抽取和视觉前处理
 
 ## 关联阅读
 
 - [Pillow](../third_party/pillow.md)
 - [pathlib](../stdlib/pathlib.md)
 - [文件处理专题](./file-processing.md)
+- [OpenCV](../third_party/opencv_python.md)
+- [媒体处理专题](./media-processing.md)
+- [计算机视觉专题](./computer-vision.md)
 
 返回 [索引](../README.md)

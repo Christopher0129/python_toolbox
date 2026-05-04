@@ -24,5 +24,6 @@
 - [数据管道专题](./data-pipelines.md)
 - [实验跟踪专题](./experiment-tracking.md)
 - [模型注册专题](./model-registry.md)
+- [特征工程专题](./feature-engineering.md)
 
 返回 [索引](../README.md)

@@ -16,6 +16,7 @@
 - 契约测试
 - Webhook 接入与异步处理
 - 特性开关与灰度发布配合
+- 模型服务接口
 
 ## 关联阅读
 
@@ -31,5 +32,6 @@
 - [契约测试专题](./contract-testing.md)
 - [Webhooks 专题](./webhooks.md)
 - [特性开关专题](./feature-flags.md)
+- [模型服务专题](./model-serving.md)
 
 返回 [索引](../README.md)
