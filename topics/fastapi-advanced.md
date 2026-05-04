@@ -29,9 +29,11 @@
 - [FastAPI 生命周期与后台任务专题](./fastapi-lifespan-background.md)
 - [依赖注入专题](./dependency-injection.md)
 - [API 版本治理专题](./api-versioning.md)
+- [OpenAPI 治理专题](./openapi-governance.md)
 - [契约测试专题](./contract-testing.md)
 - [Webhooks 专题](./webhooks.md)
 - [特性开关专题](./feature-flags.md)
 - [模型服务专题](./model-serving.md)
+- [异步测试专题](./async-testing.md)
 
 返回 [索引](../README.md)

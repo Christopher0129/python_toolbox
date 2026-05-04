@@ -26,5 +26,6 @@
 - [异步编程专题](./async-programming.md)
 - [Redis 高级专题](./redis-advanced.md)
 - [任务队列架构专题](./task-queue-architectures.md)
+- [缓存稳定性专题](./cache-stability-patterns.md)
 
 返回 [索引](../README.md)

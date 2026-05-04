@@ -24,6 +24,7 @@
 - [FastAPI 进阶专题](./fastapi-advanced.md)
 - [Schema 演进专题](./schema-evolution.md)
 - [契约测试专题](./contract-testing.md)
+- [OpenAPI 治理专题](./openapi-governance.md)
 - [发布策略专题](./deployment-strategies.md)
 
 返回 [索引](../README.md)
