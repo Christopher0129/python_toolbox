@@ -8,6 +8,7 @@
 - mock 的使用粒度
 - 接口测试与集成测试区分
 - 性能测试和回归基准
+- 契约测试与 schema 校验
 
 ## 关联阅读
 
@@ -15,5 +16,8 @@
 - [pytest-benchmark](../third_party/pytest_benchmark.md)
 - [unittest.mock](../stdlib/unittest_mock.md)
 - [测试与质量专题](./testing-quality.md)
+- [属性测试专题](./property-based-testing.md)
+- [并行测试专题](./parallel-testing.md)
+- [契约测试专题](./contract-testing.md)
 
 返回 [索引](../README.md)

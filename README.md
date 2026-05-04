@@ -58,6 +58,12 @@
 - [数据质量测试专题](./topics/data-quality-testing.md)
 - [OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md)
 - [RBAC 与 ABAC 专题](./topics/rbac-abac.md)
+- [策略引擎专题](./topics/policy-engines.md)
+- [数据契约专题](./topics/data-contracts.md)
+- [实验跟踪专题](./topics/experiment-tracking.md)
+- [序列化性能专题](./topics/serialization-performance.md)
+- [API 版本治理专题](./topics/api-versioning.md)
+- [依赖注入专题](./topics/dependency-injection.md)
 - [FastAPI WebSocket 与 SSE 专题](./topics/fastapi-websocket-sse.md)
 - [FastAPI 生命周期与后台任务专题](./topics/fastapi-lifespan-background.md)
 - [Parquet 与 Arrow 专题](./topics/parquet-arrow.md)
@@ -70,6 +76,12 @@
 - [数据管道专题](./topics/data-pipelines.md)
 - [备份与归档专题](./topics/backup-archiving.md)
 - [图像处理专题](./topics/image-processing.md)
+- [限流专题](./topics/rate-limiting.md)
+- [幂等与重试专题](./topics/idempotency-retries.md)
+- [Schema 演进专题](./topics/schema-evolution.md)
+- [模型注册专题](./topics/model-registry.md)
+- [特征库专题](./topics/feature-stores.md)
+- [契约测试专题](./topics/contract-testing.md)
 
 ## 学习路线
 
@@ -93,11 +105,15 @@
 | 做浏览器自动化与端到端测试 | [Playwright](./third_party/playwright.md) → [浏览器自动化专题](./topics/browser-automation.md) → [测试进阶专题](./topics/testing-advanced.md) |
 | 做调度、流处理和服务观测 | [APScheduler](./third_party/apscheduler.md) → [kafka-python](./third_party/kafka_python.md) → [消息系统专题](./topics/message-systems.md) → [可观测性专题](./topics/observability.md) |
 | 做服务治理和生产可观测 API | [FastAPI 入门](./frameworks/fastapi.md) → [FastAPI 进阶专题](./topics/fastapi-advanced.md) → [认证与授权专题](./topics/auth-authorization.md) → [健康检查与指标专题](./topics/health-metrics.md) |
+| 做 API 契约和兼容治理 | [API 开发专题](./topics/api-development.md) → [API 版本治理专题](./topics/api-versioning.md) → [契约测试专题](./topics/contract-testing.md) → [Schema 演进专题](./topics/schema-evolution.md) |
+| 做权限与策略抽象 | [认证与授权专题](./topics/auth-authorization.md) → [RBAC 与 ABAC 专题](./topics/rbac-abac.md) → [策略引擎专题](./topics/policy-engines.md) → [Casbin](./third_party/casbin.md) |
 | 做数据平台和语义检索 | [数据管道专题](./topics/data-pipelines.md) → [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md) → [向量检索专题](./topics/vector-retrieval.md) |
 | 做高质量测试体系 | [测试与质量专题](./topics/testing-quality.md) → [测试进阶专题](./topics/testing-advanced.md) → [属性测试专题](./topics/property-based-testing.md) → [并行测试专题](./topics/parallel-testing.md) |
 | 做现代分析工程与列式分析 | [Polars](./third_party/polars.md) → [DuckDB](./third_party/duckdb.md) → [列式数据处理专题](./topics/columnar-data-processing.md) → [分析工程专题](./topics/analytics-engineering.md) |
 | 做现代认证与权限治理 | [Token 认证专题](./topics/token-authentication.md) → [OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md) → [RBAC 与 ABAC 专题](./topics/rbac-abac.md) |
 | 做 RAG 和向量检索应用 | [向量检索专题](./topics/vector-retrieval.md) → [RAG 流水线专题](./topics/rag-pipelines.md) → [LangChain](./third_party/langchain.md) 或 [LlamaIndex](./third_party/llamaindex.md) |
+| 做数据契约与质量治理 | [数据质量测试专题](./topics/data-quality-testing.md) → [数据契约专题](./topics/data-contracts.md) → [Great Expectations](./third_party/great_expectations.md) → [Schema 演进专题](./topics/schema-evolution.md) |
+| 做实验追踪与模型治理 | [实验跟踪专题](./topics/experiment-tracking.md) → [MLflow](./third_party/mlflow.md) → [模型注册专题](./topics/model-registry.md) → [特征库专题](./topics/feature-stores.md) |
 
 ## 按任务查找
 
@@ -202,24 +218,39 @@
 
 - `FastAPI`：类型化 API
 - `Depends` / 中间件：依赖注入与统一拦截
+- `SlowAPI`：接口限流
+- `Tenacity`：重试与退避
 - `prometheus-client`：指标暴露
 - `structlog`：结构化日志
-- 系统整理见 [FastAPI 进阶专题](./topics/fastapi-advanced.md)、[认证与授权专题](./topics/auth-authorization.md)、[健康检查与指标专题](./topics/health-metrics.md)
+- `Schemathesis`：基于 schema 的契约测试
+- 系统整理见 [FastAPI 进阶专题](./topics/fastapi-advanced.md)、[认证与授权专题](./topics/auth-authorization.md)、[健康检查与指标专题](./topics/health-metrics.md)、[限流专题](./topics/rate-limiting.md)、[幂等与重试专题](./topics/idempotency-retries.md)、[API 版本治理专题](./topics/api-versioning.md)
 
 ### 身份、权限与安全边界
 
 - `PyJWT`：JWT 令牌处理
 - OAuth2 / OIDC：统一身份与授权协议
 - RBAC / ABAC：权限模型设计
-- 系统整理见 [Token 认证专题](./topics/token-authentication.md)、[OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md)、[RBAC 与 ABAC 专题](./topics/rbac-abac.md)
+- `Casbin`：策略引擎与权限判定
+- 系统整理见 [Token 认证专题](./topics/token-authentication.md)、[OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md)、[RBAC 与 ABAC 专题](./topics/rbac-abac.md)、[策略引擎专题](./topics/policy-engines.md)
 
 ### 数据工程与分析平台
 
 - `Polars` / `DuckDB`：列式本地分析
 - `dbt`：分析工程与数据测试
 - `Airflow`：任务编排
+- `Great Expectations` / `pandera`：数据契约与质量校验
+- `MLflow`：实验跟踪
+- `Feast`：特征库
 - `qdrant-client`：向量检索客户端
-- 系统整理见 [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)、[列式数据处理专题](./topics/columnar-data-processing.md)、[分析工程专题](./topics/analytics-engineering.md)
+- 系统整理见 [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md)、[列式数据处理专题](./topics/columnar-data-processing.md)、[分析工程专题](./topics/analytics-engineering.md)、[数据契约专题](./topics/data-contracts.md)、[实验跟踪专题](./topics/experiment-tracking.md)、[模型注册专题](./topics/model-registry.md)、[特征库专题](./topics/feature-stores.md)
+
+### 数据格式、序列化与兼容治理
+
+- `json`：通用 JSON
+- `orjson`：更快的 JSON 编码解码
+- `msgspec`：强类型高性能序列化
+- `pandera`：结构化表校验
+- 系统整理见 [序列化性能专题](./topics/serialization-performance.md)、[Schema 演进专题](./topics/schema-evolution.md)、[数据契约专题](./topics/data-contracts.md)
 
 ### RAG 与向量检索
 
@@ -341,6 +372,8 @@
 - [pre-commit：提交前检查](./third_party/pre_commit.md)
 - [pydantic：数据校验与建模](./third_party/pydantic.md)
 - [pydantic-settings：结构化配置](./third_party/pydantic_settings.md)
+- [orjson：高性能 JSON](./third_party/orjson.md)
+- [msgspec：高性能结构化序列化](./third_party/msgspec.md)
 - [redis-py：缓存与队列基础](./third_party/redis.md)
 - [celery：后台任务](./third_party/celery.md)
 - [APScheduler：定时任务调度](./third_party/apscheduler.md)
@@ -352,8 +385,12 @@
 - [pytest-benchmark：性能基准测试](./third_party/pytest_benchmark.md)
 - [pytest-xdist：并行测试](./third_party/pytest_xdist.md)
 - [Hypothesis：属性测试](./third_party/hypothesis.md)
+- [Schemathesis：API 契约测试](./third_party/schemathesis.md)
 - [grpcio：RPC 通信](./third_party/grpc.md)
 - [gunicorn 与 uvicorn：服务部署入口](./third_party/gunicorn_uvicorn.md)
+- [SlowAPI：FastAPI 限流](./third_party/slowapi.md)
+- [tenacity：重试与退避](./third_party/tenacity.md)
+- [Casbin：策略引擎](./third_party/casbin.md)
 - [structlog：结构化日志](./third_party/structlog.md)
 - [prometheus-client：服务指标](./third_party/prometheus_client.md)
 - [OpenTelemetry：链路追踪与指标](./third_party/opentelemetry.md)
@@ -364,6 +401,10 @@
 - [Polars：高性能 DataFrame](./third_party/polars.md)
 - [DuckDB：本地分析型 SQL](./third_party/duckdb.md)
 - [dbt：分析工程](./third_party/dbt.md)
+- [Great Expectations：数据质量校验](./third_party/great_expectations.md)
+- [pandera：DataFrame 契约校验](./third_party/pandera.md)
+- [MLflow：实验跟踪与模型治理](./third_party/mlflow.md)
+- [Feast：特征库](./third_party/feast.md)
 - [FAISS：本地向量检索](./third_party/faiss.md)
 - [pymilvus：Milvus 客户端](./third_party/pymilvus.md)
 - [LangChain：LLM 应用编排](./third_party/langchain.md)
@@ -437,6 +478,12 @@
 - [数据质量测试专题](./topics/data-quality-testing.md)
 - [OAuth2 与 OpenID Connect 专题](./topics/oauth2-oidc.md)
 - [RBAC 与 ABAC 专题](./topics/rbac-abac.md)
+- [策略引擎专题](./topics/policy-engines.md)
+- [数据契约专题](./topics/data-contracts.md)
+- [实验跟踪专题](./topics/experiment-tracking.md)
+- [序列化性能专题](./topics/serialization-performance.md)
+- [API 版本治理专题](./topics/api-versioning.md)
+- [依赖注入专题](./topics/dependency-injection.md)
 - [FastAPI WebSocket 与 SSE 专题](./topics/fastapi-websocket-sse.md)
 - [FastAPI 生命周期与后台任务专题](./topics/fastapi-lifespan-background.md)
 - [Parquet 与 Arrow 专题](./topics/parquet-arrow.md)
@@ -449,6 +496,12 @@
 - [数据管道专题](./topics/data-pipelines.md)
 - [备份与归档专题](./topics/backup-archiving.md)
 - [图像处理专题](./topics/image-processing.md)
+- [限流专题](./topics/rate-limiting.md)
+- [幂等与重试专题](./topics/idempotency-retries.md)
+- [Schema 演进专题](./topics/schema-evolution.md)
+- [模型注册专题](./topics/model-registry.md)
+- [特征库专题](./topics/feature-stores.md)
+- [契约测试专题](./topics/contract-testing.md)
 
 ### Web 和数据库
 

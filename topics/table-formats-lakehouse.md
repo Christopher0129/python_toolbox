@@ -18,6 +18,7 @@
 - [Apache Iceberg](https://iceberg.apache.org/about/)
 - [数据仓库与 ETL 专题](./data-warehouse-etl.md)
 - [分析工程专题](./analytics-engineering.md)
+- [Schema 演进专题](./schema-evolution.md)
 
 说明：这里链接到官方站点做概念入口。
 

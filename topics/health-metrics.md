@@ -9,11 +9,14 @@
 | 健康检查 | 服务是否可用 |
 | 就绪检查 | 依赖是否准备好 |
 | 指标 | 请求数、错误数、耗时、任务状态 |
+| 治理信号 | 限流命中数、重试次数、熔断状态 |
 
 ## 关联阅读
 
 - [prometheus-client](../third_party/prometheus_client.md)
 - [可观测性专题](./observability.md)
 - [部署与运维专题](./deployment-operations.md)
+- [限流专题](./rate-limiting.md)
+- [幂等与重试专题](./idempotency-retries.md)
 
 返回 [索引](../README.md)

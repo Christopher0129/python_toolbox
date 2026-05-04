@@ -18,12 +18,15 @@
 - `pandas`
 - `requests`
 - `sqlite3`
+- `Airflow`
+- `Great Expectations`
 
 ## 实战建议
 
 - 保留原始数据和清洗结果分层
 - 给每一步定义明确输入输出
 - 长流程最好加日志和错误恢复点
+- 对关键输出定义数据契约和 schema 演进策略
 
 ## 关联阅读
 
@@ -31,5 +34,7 @@
 - [文件处理专题](./file-processing.md)
 - [数据库开发专题](./database-development.md)
 - [命令行自动化专题](./automation-cli.md)
+- [数据契约专题](./data-contracts.md)
+- [Schema 演进专题](./schema-evolution.md)
 
 返回 [索引](../README.md)

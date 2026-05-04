@@ -15,11 +15,15 @@
 - `pandas`
 - `Airflow`
 - 数据库和 SQL 工具
+- `dbt`
+- `Great Expectations`
 
 ## 关联阅读
 
 - [数据管道专题](./data-pipelines.md)
 - [Airflow](../third_party/airflow.md)
 - [SQL 优化专题](./sql-optimization.md)
+- [数据契约专题](./data-contracts.md)
+- [Schema 演进专题](./schema-evolution.md)
 
 返回 [索引](../README.md)

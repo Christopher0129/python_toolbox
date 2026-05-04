@@ -31,6 +31,7 @@ app/
 | 校验层 | 用模型声明字段约束 |
 | 服务层 | 放业务逻辑 |
 | 存储层 | 统一数据库和外部依赖访问 |
+| 契约层 | 明确 schema、版本和兼容策略 |
 
 ## 适用路线
 
@@ -44,5 +45,8 @@ app/
 - [pydantic](../third_party/pydantic.md)
 - [SQLAlchemy 2.x 基础](../database/sqlalchemy.md)
 - [接口测试专题](./api-testing.md)
+- [API 版本治理专题](./api-versioning.md)
+- [幂等与重试专题](./idempotency-retries.md)
+- [契约测试专题](./contract-testing.md)
 
 返回 [索引](../README.md)

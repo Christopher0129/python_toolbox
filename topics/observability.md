@@ -17,6 +17,7 @@
 - 重要错误记录完整上下文
 - 暴露健康检查端点
 - 给关键任务加耗时观测
+- 把限流、重试和降级也纳入观测范围
 
 ## 关联阅读
 
@@ -24,5 +25,7 @@
 - [traceback](../stdlib/traceback.md)
 - [性能与调试专题](./performance-debugging.md)
 - [部署与运维专题](./deployment-operations.md)
+- [限流专题](./rate-limiting.md)
+- [幂等与重试专题](./idempotency-retries.md)
 
 返回 [索引](../README.md)

@@ -14,12 +14,17 @@
 
 - `dbt`
 - `pytest`
+- `Great Expectations`
+- `pandera`
 - 自定义校验脚本
 
 ## 关联阅读
 
 - [dbt](../third_party/dbt.md)
+- [Great Expectations](../third_party/great_expectations.md)
+- [pandera](../third_party/pandera.md)
 - [数据清洗专题](./data-cleaning.md)
 - [分析工程专题](./analytics-engineering.md)
+- [数据契约专题](./data-contracts.md)
 
 返回 [索引](../README.md)
