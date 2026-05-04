@@ -26,6 +26,7 @@
 - [事件驱动架构专题](./event-driven-architecture.md)
 - [Outbox / Inbox 模式专题](./outbox-inbox-patterns.md)
 - [消费者驱动契约专题](./consumer-driven-contracts.md)
+- [Consumer Group 运维专题](./consumer-group-operations.md)
 - [RabbitMQ 专题](./rabbitmq-messaging.md)
 - [NATS 专题](./nats-messaging.md)
 

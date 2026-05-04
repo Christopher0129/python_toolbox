@@ -16,8 +16,10 @@
 
 ## 关联阅读
 
+- [pgvector](../third_party/pgvector.md)
 - [qdrant-client](../third_party/qdrant_client.md)
 - [sentence-transformers](../third_party/sentence_transformers.md)
+- [混合检索专题](./hybrid-retrieval.md)
 - [Embedding 与 Rerank 专题](./embeddings-reranking.md)
 - [RAG 流水线专题](./rag-pipelines.md)
 - [Web 抓取专题](./web-scraping.md)

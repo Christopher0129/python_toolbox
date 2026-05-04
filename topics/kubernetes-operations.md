@@ -15,6 +15,7 @@
 - [Kubernetes Python Client](../third_party/kubernetes.md)
 - [发布策略专题](./deployment-strategies.md)
 - [健康检查与指标专题](./health-metrics.md)
+- [Kubernetes 自动伸缩专题](./kubernetes-autoscaling.md)
 - [部署与运维专题](./deployment-operations.md)
 - [Helm 与 Chart 专题](./helm-charts.md)
 - [GitOps 交付专题](./gitops-delivery.md)

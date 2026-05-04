@@ -16,6 +16,8 @@
 - [Elasticsearch](../third_party/elasticsearch.md)
 - [opensearch-py](../third_party/opensearch_py.md)
 - [向量检索专题](./vector-retrieval.md)
+- [混合检索专题](./hybrid-retrieval.md)
+- [搜索相关性调优专题](./relevance-tuning.md)
 - [RAG 流水线专题](./rag-pipelines.md)
 
 返回 [索引](../README.md)

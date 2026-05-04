@@ -26,6 +26,7 @@
 ## 关联阅读
 
 - [PyIceberg](../third_party/pyiceberg.md)
+- [数据血缘专题](./data-lineage.md)
 - [Lakehouse 表格式专题](./table-formats-lakehouse.md)
 - [数据湖存储专题](./data-lake-storage.md)
 - [Schema 演进专题](./schema-evolution.md)

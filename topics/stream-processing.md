@@ -26,6 +26,7 @@
 ## 关联阅读
 
 - [消息系统专题](./message-systems.md)
+- [Consumer Group 运维专题](./consumer-group-operations.md)
 - [Schema Registry 专题](./schema-registry.md)
 - [变更数据捕获专题](./change-data-capture.md)
 - [aiokafka](../third_party/aiokafka.md)

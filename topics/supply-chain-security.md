@@ -28,6 +28,7 @@
 - [安全基础专题](./security-basics.md)
 - [CI/CD 专题](./ci-cd.md)
 - [Docker 专题](./docker-basics.md)
+- [SBOM 与制品溯源专题](./sbom-provenance.md)
 - [GitOps 交付专题](./gitops-delivery.md)
 
 返回 [索引](../README.md)
