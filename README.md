@@ -6,6 +6,8 @@
 
 - [函数速查索引](./函数索引.md)
 - [常用内置函数](./builtins/common-builtins.md)
+- [语法与数据类型](./basics/syntax-data-types.md)
+- [控制流](./basics/control-flow.md)
 - [异常类型合集](./basics/exception-types.md)
 - [常见 Python 实战脚本](./examples/common_cases.md)
 - [Python 小项目模板](./examples/mini_projects.md)
@@ -20,12 +22,23 @@
 - [性能与调试专题](./topics/performance-debugging.md)
 - [数据库开发专题](./topics/database-development.md)
 - [项目结构专题](./topics/project-structure.md)
+- [异步编程专题](./topics/async-programming.md)
+- [API 开发专题](./topics/api-development.md)
+- [配置管理专题](./topics/config-management.md)
+- [打包与发布专题](./topics/packaging-release.md)
+- [部署与运维专题](./topics/deployment-operations.md)
+- [安全基础专题](./topics/security-basics.md)
+- [Excel 自动化专题](./topics/excel-automation.md)
+- [数据管道专题](./topics/data-pipelines.md)
+- [备份与归档专题](./topics/backup-archiving.md)
+- [图像处理专题](./topics/image-processing.md)
 
 ## 学习路线
 
 | 目标 | 推荐入口 |
 | --- | --- |
 | 从零开始补 Python 常用能力 | [常用内置函数](./builtins/common-builtins.md) → [string](./stdlib/string.md) → [os](./stdlib/os.md) → [pathlib](./stdlib/pathlib.md) |
+| 打牢语法和基础心智模型 | [语法与数据类型](./basics/syntax-data-types.md) → [控制流](./basics/control-flow.md) → [函数与作用域](./basics/functions-scope.md) → [推导式与生成器](./basics/comprehensions-generators.md) |
 | 写脚本、命令行工具、自动化任务 | [argparse](./stdlib/argparse.md) → [sys](./stdlib/sys.md) → [subprocess](./stdlib/subprocess.md) → [logging](./stdlib/logging.md) |
 | 做文件处理和数据清洗 | [csv](./stdlib/csv.md) → [json](./stdlib/json.md) → [pathlib](./stdlib/pathlib.md) → [文件处理专题](./topics/file-processing.md) → [数据清洗专题](./topics/data-cleaning.md) |
 | 做网络请求和接口调用 | [urllib](./stdlib/urllib.md) → [requests](./third_party/requests.md) → [httpx](./third_party/httpx.md) → [网络编程专题](./topics/network-programming.md) |
@@ -36,6 +49,7 @@
 | 进入 Web 后端开发 | [Flask 入门](./frameworks/flask.md) 或 [FastAPI 入门](./frameworks/fastapi.md) → [SQLAlchemy 2.x 基础](./database/sqlalchemy.md) → [项目结构专题](./topics/project-structure.md) |
 | 做异步网络或高并发抓取 | [asyncio](./stdlib/asyncio.md) → [httpx](./third_party/httpx.md) → [aiohttp](./third_party/aiohttp.md) → [Web 抓取专题](./topics/web-scraping.md) |
 | 学数据库建模和迁移 | [sqlite3](./stdlib/sqlite3.md) → [SQLAlchemy 2.x 基础](./database/sqlalchemy.md) → [Alembic](./third_party/alembic.md) → [数据库开发专题](./topics/database-development.md) |
+| 学配置、发布和部署 | [导入、包与虚拟环境](./basics/imports-venv.md) → [配置管理专题](./topics/config-management.md) → [打包与发布专题](./topics/packaging-release.md) → [部署与运维专题](./topics/deployment-operations.md) |
 
 ## 按任务查找
 
@@ -54,6 +68,7 @@
 - `os`：遍历目录、环境变量
 - `glob`：批量匹配文件
 - `shutil`：复制、移动、打包
+- `zipfile` / `tarfile`：压缩包归档和解压
 - `hashlib`：文件校验
 - 进阶串联见 [文件处理专题](./topics/file-processing.md)
 
@@ -63,6 +78,7 @@
 - `re`：匹配、提取、替换
 - `json`：结构化数据读写
 - `csv`：表格文本输入输出
+- `xml.etree.ElementTree`：XML 解析与生成
 - `pickle`：本地对象缓存
 - `datetime` / `time`：时间处理和计时
 - 进阶串联见 [数据清洗专题](./topics/data-cleaning.md)
@@ -94,7 +110,9 @@
 - `numpy`：数组和数值计算
 - `pandas`：表格数据清洗和聚合
 - `matplotlib`：基础可视化和折线柱状图
+- `seaborn` / `plotly`：统计图和交互图
 - `openpyxl`：读写 Excel 文件、样式、工作表
+- `streamlit`：快速包装数据工具页面
 - 系统整理见 [数据可视化专题](./topics/data-visualization.md)
 
 ### 算法、数据结构和刷题
@@ -103,7 +121,16 @@
 - `collections.deque`：队列、双端队列、滑动窗口
 - `collections.Counter`：计数和频率统计
 - `itertools`：组合、排列、笛卡尔积
+- `bisect` / `heapq`：二分边界与优先队列
 - 系统整理见 [算法与数据结构专题](./topics/algorithms-data-structures.md)
+
+### 配置、发布和运维
+
+- `os.environ`：环境变量配置
+- `configparser` / `tomllib`：配置文件读取
+- `logging`：运行日志
+- `shutil` / `zipfile`：备份归档
+- 系统整理见 [配置管理专题](./topics/config-management.md)、[打包与发布专题](./topics/packaging-release.md)、[部署与运维专题](./topics/deployment-operations.md)
 
 ### 测试、调试和排错
 
@@ -136,6 +163,8 @@
 - [math：数学函数与常量](./stdlib/math.md)
 - [decimal：高精度十进制计算](./stdlib/decimal.md)
 - [random：随机数与抽样](./stdlib/random.md)
+- [statistics：基础统计计算](./stdlib/statistics.md)
+- [enum 与 fractions：枚举和精确分数](./stdlib/enum_fractions.md)
 
 ### 文件、路径、系统交互
 
@@ -148,6 +177,10 @@
 - [subprocess：启动外部命令](./stdlib/subprocess.md)
 - [argparse：命令行参数解析](./stdlib/argparse.md)
 - [contextlib：上下文管理工具](./stdlib/contextlib.md)
+- [io 与 textwrap：内存流与文本排版](./stdlib/io_textwrap.md)
+- [copy 与 pprint：复制与格式化打印](./stdlib/copy_pprint.md)
+- [zipfile 与 tarfile：压缩归档](./stdlib/zipfile_tarfile.md)
+- [configparser 与 tomllib：配置文件读取](./stdlib/configparser_tomllib.md)
 
 ### 并发、网络、邮件
 
@@ -161,6 +194,7 @@
 - [http.server：临时静态服务](./stdlib/http_server.md)
 - [socket：TCP/UDP 网络通信](./stdlib/socket.md)
 - [email：邮件内容构造](./stdlib/email.md)
+- [secrets 与 base64：安全随机与编码](./stdlib/secrets_base64.md)
 
 ### 数据存储、校验、标识
 
@@ -173,6 +207,7 @@
 - [collections：高频容器](./stdlib/collections.md)
 - [itertools 与 functools：迭代器和函数工具](./stdlib/itertools_functools.md)
 - [typing 与 dataclasses：类型标注和数据类](./stdlib/typing_dataclasses.md)
+- [bisect 与 heapq：二分与堆](./stdlib/bisect_heapq.md)
 
 ### 调试、测试、诊断
 
@@ -184,6 +219,7 @@
 - [unittest：标准单元测试框架](./stdlib/unittest.md)
 - [unittest.mock：模拟与替换](./stdlib/unittest_mock.md)
 - [pdb：交互式调试](./stdlib/pdb.md)
+- [xml.etree.ElementTree：XML 处理](./stdlib/xml_parsing.md)
 
 ## 第三方常用库
 
@@ -191,9 +227,16 @@
 - [httpx：同步 / 异步 HTTP 客户端](./third_party/httpx.md)
 - [aiohttp：异步 HTTP 客户端](./third_party/aiohttp.md)
 - [Beautiful Soup 4：HTML 解析](./third_party/beautifulsoup4.md)
+- [rich：终端富文本输出](./third_party/rich.md)
+- [typer：现代 CLI](./third_party/typer.md)
+- [jinja2：模板引擎](./third_party/jinja2.md)
+- [pillow：图像处理](./third_party/pillow.md)
 - [numpy：数值计算](./third_party/numpy.md)
 - [pandas：表格数据分析](./third_party/pandas.md)
 - [matplotlib：基础数据可视化](./third_party/matplotlib.md)
+- [seaborn：统计图表](./third_party/seaborn.md)
+- [plotly：交互式图表](./third_party/plotly.md)
+- [streamlit：快速数据应用](./third_party/streamlit.md)
 - [openpyxl：Excel 读写](./third_party/openpyxl.md)
 - [pytest：测试框架](./third_party/pytest.md)
 - [pydantic：数据校验与建模](./third_party/pydantic.md)
@@ -203,6 +246,11 @@
 
 ### 语言基础
 
+- [语法与数据类型](./basics/syntax-data-types.md)
+- [控制流](./basics/control-flow.md)
+- [函数与作用域](./basics/functions-scope.md)
+- [可迭代对象与迭代器](./basics/iterables-iterators.md)
+- [导入、包与虚拟环境](./basics/imports-venv.md)
 - [面向对象编程](./basics/oop.md)
 - [函数与模块组织](./basics/functions-modules.md)
 - [推导式与生成器](./basics/comprehensions-generators.md)
@@ -220,10 +268,20 @@
 - [接口测试专题](./topics/api-testing.md)
 - [网络编程专题](./topics/network-programming.md)
 - [Web 抓取专题](./topics/web-scraping.md)
+- [异步编程专题](./topics/async-programming.md)
+- [API 开发专题](./topics/api-development.md)
 - [性能与调试专题](./topics/performance-debugging.md)
 - [测试与质量专题](./topics/testing-quality.md)
 - [数据库开发专题](./topics/database-development.md)
 - [项目结构专题](./topics/project-structure.md)
+- [配置管理专题](./topics/config-management.md)
+- [打包与发布专题](./topics/packaging-release.md)
+- [部署与运维专题](./topics/deployment-operations.md)
+- [安全基础专题](./topics/security-basics.md)
+- [Excel 自动化专题](./topics/excel-automation.md)
+- [数据管道专题](./topics/data-pipelines.md)
+- [备份与归档专题](./topics/backup-archiving.md)
+- [图像处理专题](./topics/image-processing.md)
 
 ### Web 和数据库
 
