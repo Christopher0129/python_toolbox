@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | `urllib` | 标准库 URL 处理和基础 HTTP | 必学 |
 | `requests` | 更易用的 HTTP 客户端 | 高频 |
+| `httpx` | 支持同步和异步的现代 HTTP 客户端 | 高频 |
 | `http.server` | 临时静态服务 | 高频 |
 | `socket` | TCP/UDP 底层通信 | 高频 |
 | `threading` / `queue` | 简单并发网络任务 | 常用 |
@@ -30,7 +31,7 @@ print(url)
 
 ### 2. 发送简单 HTTP 请求
 
-推荐组合：`urllib.request` 或 `requests`
+推荐组合：`urllib.request`、`requests` 或 `httpx`
 
 ```python
 from urllib.request import urlopen
@@ -45,6 +46,15 @@ import requests
 resp = requests.get("https://httpbin.org/get", timeout=10)
 resp.raise_for_status()
 print(resp.json())
+```
+
+```python
+import httpx
+
+with httpx.Client(timeout=10) as client:
+    resp = client.get("https://httpbin.org/get")
+    resp.raise_for_status()
+    print(resp.json())
 ```
 
 ### 3. 临时起本地文件服务
@@ -90,11 +100,11 @@ with ThreadPoolExecutor(max_workers=5) as pool:
 | 任务 | 模块组合 |
 | --- | --- |
 | 拼接带参数链接 | `urllib.parse` |
-| 调接口和下载文件 | `requests` / `urllib.request` |
+| 调接口和下载文件 | `requests` / `httpx` / `urllib.request` |
 | 本地共享目录 | `http.server` |
 | TCP 客户端 / 服务端 | `socket` |
 | 批量并发请求 | `concurrent.futures` + `requests` |
-| 高并发异步抓取 | `asyncio` |
+| 高并发异步抓取 | `asyncio` + `aiohttp` / `httpx` |
 
 ## 常见异常要点
 
@@ -107,6 +117,7 @@ with ThreadPoolExecutor(max_workers=5) as pool:
 ## 实战建议
 
 - 简单接口优先 `requests`，基础 URL 编解码用 `urllib.parse`
+- 需要统一同步和异步风格时，可以优先考虑 `httpx`
 - 网络代码始终带超时
 - 批量请求时要控制并发，不要直接无限开线程
 - 底层通信问题再回到 `socket` 排查
@@ -120,6 +131,8 @@ with ThreadPoolExecutor(max_workers=5) as pool:
 - [queue](../stdlib/queue.md)
 - [concurrent.futures](../stdlib/concurrent_futures.md)
 - [requests](../third_party/requests.md)
+- [httpx](../third_party/httpx.md)
+- [aiohttp](../third_party/aiohttp.md)
 - [异常类型合集](../basics/exception-types.md)
 
 返回 [索引](../README.md)

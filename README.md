@@ -8,11 +8,18 @@
 - [常用内置函数](./builtins/common-builtins.md)
 - [异常类型合集](./basics/exception-types.md)
 - [常见 Python 实战脚本](./examples/common_cases.md)
+- [Python 小项目模板](./examples/mini_projects.md)
 - [算法与数据结构专题](./topics/algorithms-data-structures.md)
 - [数据可视化专题](./topics/data-visualization.md)
+- [数据清洗专题](./topics/data-cleaning.md)
 - [文件处理专题](./topics/file-processing.md)
+- [命令行自动化专题](./topics/automation-cli.md)
 - [接口测试专题](./topics/api-testing.md)
 - [网络编程专题](./topics/network-programming.md)
+- [Web 抓取专题](./topics/web-scraping.md)
+- [性能与调试专题](./topics/performance-debugging.md)
+- [数据库开发专题](./topics/database-development.md)
+- [项目结构专题](./topics/project-structure.md)
 
 ## 学习路线
 
@@ -20,13 +27,15 @@
 | --- | --- |
 | 从零开始补 Python 常用能力 | [常用内置函数](./builtins/common-builtins.md) → [string](./stdlib/string.md) → [os](./stdlib/os.md) → [pathlib](./stdlib/pathlib.md) |
 | 写脚本、命令行工具、自动化任务 | [argparse](./stdlib/argparse.md) → [sys](./stdlib/sys.md) → [subprocess](./stdlib/subprocess.md) → [logging](./stdlib/logging.md) |
-| 做文件处理和数据清洗 | [csv](./stdlib/csv.md) → [json](./stdlib/json.md) → [pathlib](./stdlib/pathlib.md) → [文件处理专题](./topics/file-processing.md) |
-| 做网络请求和接口调用 | [urllib](./stdlib/urllib.md) → [requests](./third_party/requests.md) → [socket](./stdlib/socket.md) → [网络编程专题](./topics/network-programming.md) |
-| 补测试、调试和排错能力 | [unittest](./stdlib/unittest.md) → [pdb](./stdlib/pdb.md) → [异常处理](./basics/exceptions.md) → [异常类型合集](./basics/exception-types.md) |
+| 做文件处理和数据清洗 | [csv](./stdlib/csv.md) → [json](./stdlib/json.md) → [pathlib](./stdlib/pathlib.md) → [文件处理专题](./topics/file-processing.md) → [数据清洗专题](./topics/data-cleaning.md) |
+| 做网络请求和接口调用 | [urllib](./stdlib/urllib.md) → [requests](./third_party/requests.md) → [httpx](./third_party/httpx.md) → [网络编程专题](./topics/network-programming.md) |
+| 补测试、调试和排错能力 | [unittest](./stdlib/unittest.md) → [pdb](./stdlib/pdb.md) → [traceback](./stdlib/traceback.md) → [性能与调试专题](./topics/performance-debugging.md) |
 | 补算法、数据结构和刷题基础 | [算法与数据结构专题](./topics/algorithms-data-structures.md) → [collections](./stdlib/collections.md) → [itertools 与 functools](./stdlib/itertools_functools.md) |
 | 做 Excel、图表和数据汇报 | [pandas](./third_party/pandas.md) → [openpyxl](./third_party/openpyxl.md) → [matplotlib](./third_party/matplotlib.md) → [数据可视化专题](./topics/data-visualization.md) |
-| 进入现代 Python 测试流 | [pytest](./third_party/pytest.md) → [unittest](./stdlib/unittest.md) → [异常类型合集](./basics/exception-types.md) → [接口测试专题](./topics/api-testing.md) |
-| 进入 Web 后端开发 | [Flask 入门](./frameworks/flask.md) 或 [Django 入门](./frameworks/django.md) → [SQLAlchemy 2.x 基础](./database/sqlalchemy.md) |
+| 进入现代 Python 测试流 | [pytest](./third_party/pytest.md) → [unittest.mock](./stdlib/unittest_mock.md) → [测试与质量专题](./topics/testing-quality.md) → [接口测试专题](./topics/api-testing.md) |
+| 进入 Web 后端开发 | [Flask 入门](./frameworks/flask.md) 或 [FastAPI 入门](./frameworks/fastapi.md) → [SQLAlchemy 2.x 基础](./database/sqlalchemy.md) → [项目结构专题](./topics/project-structure.md) |
+| 做异步网络或高并发抓取 | [asyncio](./stdlib/asyncio.md) → [httpx](./third_party/httpx.md) → [aiohttp](./third_party/aiohttp.md) → [Web 抓取专题](./topics/web-scraping.md) |
+| 学数据库建模和迁移 | [sqlite3](./stdlib/sqlite3.md) → [SQLAlchemy 2.x 基础](./database/sqlalchemy.md) → [Alembic](./third_party/alembic.md) → [数据库开发专题](./topics/database-development.md) |
 
 ## 按任务查找
 
@@ -37,6 +46,7 @@
 - `subprocess`：调用外部程序
 - `logging`：记录运行日志
 - `tempfile`：安全创建临时文件
+- 进阶串联见 [命令行自动化专题](./topics/automation-cli.md)
 
 ### 文件和目录处理
 
@@ -55,6 +65,7 @@
 - `csv`：表格文本输入输出
 - `pickle`：本地对象缓存
 - `datetime` / `time`：时间处理和计时
+- 进阶串联见 [数据清洗专题](./topics/data-cleaning.md)
 
 ### 并发和网络
 
@@ -63,7 +74,7 @@
 - `concurrent.futures`：线程池和进程池
 - `asyncio`：高并发 I/O
 - `multiprocessing`：CPU 密集型并行
-- `urllib` / `requests`：HTTP 请求
+- `urllib` / `requests` / `httpx`：HTTP 请求
 - `http.server`：临时本地文件服务
 - `socket`：TCP/UDP 通信
 - 进阶串联见 [网络编程专题](./topics/network-programming.md)
@@ -72,9 +83,11 @@
 
 - `sqlite3`：本地数据库
 - `SQLAlchemy`：ORM 和数据库访问
+- `Alembic`：数据库迁移
 - `uuid`：唯一 ID
 - `hashlib`：哈希摘要
 - `decimal`：金额等精确计算
+- 进阶串联见 [数据库开发专题](./topics/database-development.md)
 
 ### 数据分析、图表和 Excel
 
@@ -96,11 +109,14 @@
 
 - `doctest`：文档即测试
 - `unittest`：正式单元测试
+- `unittest.mock`：替换外部依赖
 - `pytest`：更常用的测试框架和夹具系统
 - `pdb`：断点调试
+- `traceback` / `cProfile`：堆栈诊断和性能分析
 - [异常处理](./basics/exceptions.md)：异常写法和捕获方式
 - [异常类型合集](./basics/exception-types.md)：按报错名定位原因
 - 接口测试串联见 [接口测试专题](./topics/api-testing.md)
+- 综合整理见 [测试与质量专题](./topics/testing-quality.md) 和 [性能与调试专题](./topics/performance-debugging.md)
 
 ## 标准库总览
 
@@ -131,6 +147,7 @@
 - [shutil：复制、移动、归档](./stdlib/shutil.md)
 - [subprocess：启动外部命令](./stdlib/subprocess.md)
 - [argparse：命令行参数解析](./stdlib/argparse.md)
+- [contextlib：上下文管理工具](./stdlib/contextlib.md)
 
 ### 并发、网络、邮件
 
@@ -161,24 +178,35 @@
 
 - [logging：日志](./stdlib/logging.md)
 - [logging 与 subprocess 组合速览](./stdlib/logging_subprocess.md)
+- [traceback：异常堆栈处理](./stdlib/traceback.md)
+- [cProfile：性能剖析](./stdlib/cprofile.md)
 - [doctest：文档即测试](./stdlib/doctest.md)
 - [unittest：标准单元测试框架](./stdlib/unittest.md)
+- [unittest.mock：模拟与替换](./stdlib/unittest_mock.md)
 - [pdb：交互式调试](./stdlib/pdb.md)
 
 ## 第三方常用库
 
 - [requests：HTTP 请求](./third_party/requests.md)
+- [httpx：同步 / 异步 HTTP 客户端](./third_party/httpx.md)
+- [aiohttp：异步 HTTP 客户端](./third_party/aiohttp.md)
+- [Beautiful Soup 4：HTML 解析](./third_party/beautifulsoup4.md)
 - [numpy：数值计算](./third_party/numpy.md)
 - [pandas：表格数据分析](./third_party/pandas.md)
 - [matplotlib：基础数据可视化](./third_party/matplotlib.md)
 - [openpyxl：Excel 读写](./third_party/openpyxl.md)
 - [pytest：测试框架](./third_party/pytest.md)
+- [pydantic：数据校验与建模](./third_party/pydantic.md)
+- [Alembic：数据库迁移](./third_party/alembic.md)
 
 ## 专题与扩展
 
 ### 语言基础
 
 - [面向对象编程](./basics/oop.md)
+- [函数与模块组织](./basics/functions-modules.md)
+- [推导式与生成器](./basics/comprehensions-generators.md)
+- [装饰器与上下文管理](./basics/decorators-context-managers.md)
 - [异常处理](./basics/exceptions.md)
 - [异常类型合集](./basics/exception-types.md)
 
@@ -186,19 +214,28 @@
 
 - [算法与数据结构专题](./topics/algorithms-data-structures.md)
 - [数据可视化专题](./topics/data-visualization.md)
+- [数据清洗专题](./topics/data-cleaning.md)
 - [文件处理专题](./topics/file-processing.md)
+- [命令行自动化专题](./topics/automation-cli.md)
 - [接口测试专题](./topics/api-testing.md)
 - [网络编程专题](./topics/network-programming.md)
+- [Web 抓取专题](./topics/web-scraping.md)
+- [性能与调试专题](./topics/performance-debugging.md)
+- [测试与质量专题](./topics/testing-quality.md)
+- [数据库开发专题](./topics/database-development.md)
+- [项目结构专题](./topics/project-structure.md)
 
 ### Web 和数据库
 
 - [Flask 入门](./frameworks/flask.md)
+- [FastAPI 入门](./frameworks/fastapi.md)
 - [Django 入门](./frameworks/django.md)
 - [SQLAlchemy 2.x 基础](./database/sqlalchemy.md)
 
 ### 实战案例
 
 - [常见 Python 实战脚本](./examples/common_cases.md)
+- [Python 小项目模板](./examples/mini_projects.md)
 
 ## 维护建议
 

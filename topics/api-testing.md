@@ -7,6 +7,7 @@
 | 模块 / 库 | 作用 | 推荐程度 |
 | --- | --- | --- |
 | `requests` | 发 HTTP 请求 | 必学 |
+| `httpx` | 支持同步和异步测试场景 | 高频 |
 | `pytest` | 组织测试、断言、夹具、参数化 | 必学 |
 | `json` | 构造和校验 JSON 数据 | 高频 |
 | `tempfile` | 临时测试文件和目录 | 常用 |
@@ -97,10 +98,11 @@ def test_temp_file():
 
 | 任务 | 模块组合 |
 | --- | --- |
-| 调接口并校验响应 | `requests` + `pytest` |
+| 调接口并校验响应 | `requests` / `httpx` + `pytest` |
 | 复用登录态 | `requests.Session()` + `fixture` |
 | 批量跑参数场景 | `pytest.mark.parametrize` |
 | 临时上传文件测试 | `tempfile` + `pathlib` |
+| 替换外部依赖 | `unittest.mock` |
 | 打日志辅助排查 | `logging` |
 
 ## 实战建议
@@ -109,11 +111,14 @@ def test_temp_file():
 - 断言不要只看状态码，最好同时校验 JSON 字段
 - 需要复用请求头、Token、Session 时，优先用 `fixture`
 - 外部服务不稳定时，要区分“接口逻辑失败”和“网络环境失败”
+- 对第三方接口测试，优先 mock 外部依赖，减少环境波动
 
 ## 关联阅读
 
 - [requests](../third_party/requests.md)
+- [httpx](../third_party/httpx.md)
 - [pytest](../third_party/pytest.md)
+- [unittest.mock](../stdlib/unittest_mock.md)
 - [tempfile](../stdlib/tempfile.md)
 - [json](../stdlib/json.md)
 - [logging](../stdlib/logging.md)
