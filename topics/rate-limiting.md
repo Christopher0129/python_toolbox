@@ -31,5 +31,6 @@
 - [FastAPI 进阶专题](./fastapi-advanced.md)
 - [健康检查与指标专题](./health-metrics.md)
 - [Token 认证专题](./token-authentication.md)
+- [断路器与隔离专题](./circuit-breakers-bulkheads.md)
 
 返回 [索引](../README.md)

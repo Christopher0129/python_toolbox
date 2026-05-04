@@ -14,6 +14,8 @@
 - WebSocket / SSE
 - 接口版本治理
 - 契约测试
+- Webhook 接入与异步处理
+- 特性开关与灰度发布配合
 
 ## 关联阅读
 
@@ -27,5 +29,7 @@
 - [依赖注入专题](./dependency-injection.md)
 - [API 版本治理专题](./api-versioning.md)
 - [契约测试专题](./contract-testing.md)
+- [Webhooks 专题](./webhooks.md)
+- [特性开关专题](./feature-flags.md)
 
 返回 [索引](../README.md)

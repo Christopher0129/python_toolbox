@@ -9,6 +9,7 @@
 - 向后兼容策略
 - 文档与客户端同步
 - 契约测试与兼容验证
+- 发布切换与双版本共存
 
 ## 实战建议
 
@@ -23,5 +24,6 @@
 - [FastAPI 进阶专题](./fastapi-advanced.md)
 - [Schema 演进专题](./schema-evolution.md)
 - [契约测试专题](./contract-testing.md)
+- [发布策略专题](./deployment-strategies.md)
 
 返回 [索引](../README.md)

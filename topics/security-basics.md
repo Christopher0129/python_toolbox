@@ -18,6 +18,8 @@
 - 校验文件路径和来源
 - 外部命令优先传参数列表，不拼字符串
 - 不信任外部 `pickle`
+- 把密钥和普通配置分层管理
+- 对回调接口做签名校验与重放防护
 
 ## 关联阅读
 
@@ -26,5 +28,7 @@
 - [pickle](../stdlib/pickle.md)
 - [文件处理专题](./file-processing.md)
 - [配置管理专题](./config-management.md)
+- [密钥管理专题](./secrets-management.md)
+- [Webhooks 专题](./webhooks.md)
 
 返回 [索引](../README.md)

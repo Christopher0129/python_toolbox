@@ -10,6 +10,7 @@
 - 版本兼容
 - 质量规则
 - 上下游责任边界
+- 事件载荷约定
 
 ## 常见工具
 
@@ -24,5 +25,6 @@
 - [数据质量测试专题](./data-quality-testing.md)
 - [分析工程专题](./analytics-engineering.md)
 - [Schema 演进专题](./schema-evolution.md)
+- [事件驱动架构专题](./event-driven-architecture.md)
 
 返回 [索引](../README.md)

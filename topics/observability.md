@@ -18,6 +18,7 @@
 - 暴露健康检查端点
 - 给关键任务加耗时观测
 - 把限流、重试和降级也纳入观测范围
+- 给发布切流、特性开关和断路状态补观测
 
 ## 关联阅读
 
@@ -27,5 +28,7 @@
 - [部署与运维专题](./deployment-operations.md)
 - [限流专题](./rate-limiting.md)
 - [幂等与重试专题](./idempotency-retries.md)
+- [断路器与隔离专题](./circuit-breakers-bulkheads.md)
+- [发布策略专题](./deployment-strategies.md)
 
 返回 [索引](../README.md)

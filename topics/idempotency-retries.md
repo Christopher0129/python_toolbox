@@ -31,5 +31,7 @@
 - [Kafka 重试与 DLQ 专题](./kafka-retry-dlq.md)
 - [缓存与队列专题](./cache-queues.md)
 - [API 开发专题](./api-development.md)
+- [Webhooks 专题](./webhooks.md)
+- [Outbox / Inbox 模式专题](./outbox-inbox-patterns.md)
 
 返回 [索引](../README.md)

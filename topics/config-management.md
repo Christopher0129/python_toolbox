@@ -16,6 +16,7 @@
 - 密钥不要写死在代码里
 - 配置读取集中到一处
 - 区分默认值、开发环境、生产环境
+- 普通配置和敏感配置分层管理
 
 ## 常见工具
 
@@ -23,6 +24,8 @@
 - `configparser`
 - `tomllib`
 - `pydantic`
+- `dynaconf`
+- `Vault`
 
 ## 关联阅读
 
@@ -30,6 +33,9 @@
 - [configparser 与 tomllib](../stdlib/configparser_tomllib.md)
 - [json](../stdlib/json.md)
 - [pydantic](../third_party/pydantic.md)
+- [pydantic-settings](../third_party/pydantic_settings.md)
+- [dynaconf](../third_party/dynaconf.md)
+- [密钥管理专题](./secrets-management.md)
 - [项目结构专题](./project-structure.md)
 
 返回 [索引](../README.md)

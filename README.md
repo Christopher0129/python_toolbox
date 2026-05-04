@@ -82,6 +82,14 @@
 - [模型注册专题](./topics/model-registry.md)
 - [特征库专题](./topics/feature-stores.md)
 - [契约测试专题](./topics/contract-testing.md)
+- [Webhooks 专题](./topics/webhooks.md)
+- [密钥管理专题](./topics/secrets-management.md)
+- [发布策略专题](./topics/deployment-strategies.md)
+- [特性开关专题](./topics/feature-flags.md)
+- [断路器与隔离专题](./topics/circuit-breakers-bulkheads.md)
+- [Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md)
+- [消费者驱动契约专题](./topics/consumer-driven-contracts.md)
+- [事件驱动架构专题](./topics/event-driven-architecture.md)
 
 ## 学习路线
 
@@ -106,6 +114,7 @@
 | 做调度、流处理和服务观测 | [APScheduler](./third_party/apscheduler.md) → [kafka-python](./third_party/kafka_python.md) → [消息系统专题](./topics/message-systems.md) → [可观测性专题](./topics/observability.md) |
 | 做服务治理和生产可观测 API | [FastAPI 入门](./frameworks/fastapi.md) → [FastAPI 进阶专题](./topics/fastapi-advanced.md) → [认证与授权专题](./topics/auth-authorization.md) → [健康检查与指标专题](./topics/health-metrics.md) |
 | 做 API 契约和兼容治理 | [API 开发专题](./topics/api-development.md) → [API 版本治理专题](./topics/api-versioning.md) → [契约测试专题](./topics/contract-testing.md) → [Schema 演进专题](./topics/schema-evolution.md) |
+| 做回调与异步事件接入 | [Webhooks 专题](./topics/webhooks.md) → [幂等与重试专题](./topics/idempotency-retries.md) → [消息系统专题](./topics/message-systems.md) → [Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md) |
 | 做权限与策略抽象 | [认证与授权专题](./topics/auth-authorization.md) → [RBAC 与 ABAC 专题](./topics/rbac-abac.md) → [策略引擎专题](./topics/policy-engines.md) → [Casbin](./third_party/casbin.md) |
 | 做数据平台和语义检索 | [数据管道专题](./topics/data-pipelines.md) → [数据仓库与 ETL 专题](./topics/data-warehouse-etl.md) → [向量检索专题](./topics/vector-retrieval.md) |
 | 做高质量测试体系 | [测试与质量专题](./topics/testing-quality.md) → [测试进阶专题](./topics/testing-advanced.md) → [属性测试专题](./topics/property-based-testing.md) → [并行测试专题](./topics/parallel-testing.md) |
@@ -114,6 +123,9 @@
 | 做 RAG 和向量检索应用 | [向量检索专题](./topics/vector-retrieval.md) → [RAG 流水线专题](./topics/rag-pipelines.md) → [LangChain](./third_party/langchain.md) 或 [LlamaIndex](./third_party/llamaindex.md) |
 | 做数据契约与质量治理 | [数据质量测试专题](./topics/data-quality-testing.md) → [数据契约专题](./topics/data-contracts.md) → [Great Expectations](./third_party/great_expectations.md) → [Schema 演进专题](./topics/schema-evolution.md) |
 | 做实验追踪与模型治理 | [实验跟踪专题](./topics/experiment-tracking.md) → [MLflow](./third_party/mlflow.md) → [模型注册专题](./topics/model-registry.md) → [特征库专题](./topics/feature-stores.md) |
+| 做密钥与多环境配置治理 | [配置管理专题](./topics/config-management.md) → [密钥管理专题](./topics/secrets-management.md) → [pydantic-settings](./third_party/pydantic_settings.md) → [hvac](./third_party/hvac.md) |
+| 做服务韧性与安全发布 | [限流专题](./topics/rate-limiting.md) → [幂等与重试专题](./topics/idempotency-retries.md) → [断路器与隔离专题](./topics/circuit-breakers-bulkheads.md) → [发布策略专题](./topics/deployment-strategies.md) |
+| 做事件驱动系统协作 | [事件驱动架构专题](./topics/event-driven-architecture.md) → [消息系统专题](./topics/message-systems.md) → [数据契约专题](./topics/data-contracts.md) → [消费者驱动契约专题](./topics/consumer-driven-contracts.md) |
 
 ## 按任务查找
 
@@ -193,10 +205,12 @@
 
 - `os.environ`：环境变量配置
 - `configparser` / `tomllib`：配置文件读取
+- `dynaconf` / `pydantic-settings`：多环境结构化配置
+- `Vault` / `hvac`：密钥与敏感配置管理
 - `logging`：运行日志
 - `shutil` / `zipfile`：备份归档
 - `gunicorn` / `uvicorn` / Docker：服务部署入口
-- 系统整理见 [配置管理专题](./topics/config-management.md)、[打包与发布专题](./topics/packaging-release.md)、[部署与运维专题](./topics/deployment-operations.md)、[Docker 专题](./topics/docker-basics.md)
+- 系统整理见 [配置管理专题](./topics/config-management.md)、[密钥管理专题](./topics/secrets-management.md)、[打包与发布专题](./topics/packaging-release.md)、[部署与运维专题](./topics/deployment-operations.md)、[发布策略专题](./topics/deployment-strategies.md)、[Docker 专题](./topics/docker-basics.md)
 
 ### 工程质量与协作
 
@@ -211,8 +225,10 @@
 - `APScheduler`：定时任务
 - `Celery`：后台任务
 - `Kafka`：事件流和消息流
+- `Webhook`：外部系统异步回调接入
+- `Outbox / Inbox`：一致性和去重
 - `logging` / `traceback`：日志和错误堆栈
-- 系统整理见 [任务调度专题](./topics/task-scheduling.md)、[消息系统专题](./topics/message-systems.md)、[可观测性专题](./topics/observability.md)
+- 系统整理见 [任务调度专题](./topics/task-scheduling.md)、[消息系统专题](./topics/message-systems.md)、[Webhooks 专题](./topics/webhooks.md)、[事件驱动架构专题](./topics/event-driven-architecture.md)、[Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md)、[可观测性专题](./topics/observability.md)
 
 ### 服务治理与 API 生产化
 
@@ -220,10 +236,12 @@
 - `Depends` / 中间件：依赖注入与统一拦截
 - `SlowAPI`：接口限流
 - `Tenacity`：重试与退避
+- `pybreaker`：断路器
 - `prometheus-client`：指标暴露
 - `structlog`：结构化日志
 - `Schemathesis`：基于 schema 的契约测试
-- 系统整理见 [FastAPI 进阶专题](./topics/fastapi-advanced.md)、[认证与授权专题](./topics/auth-authorization.md)、[健康检查与指标专题](./topics/health-metrics.md)、[限流专题](./topics/rate-limiting.md)、[幂等与重试专题](./topics/idempotency-retries.md)、[API 版本治理专题](./topics/api-versioning.md)
+- `Unleash`：特性开关与灰度
+- 系统整理见 [FastAPI 进阶专题](./topics/fastapi-advanced.md)、[认证与授权专题](./topics/auth-authorization.md)、[健康检查与指标专题](./topics/health-metrics.md)、[限流专题](./topics/rate-limiting.md)、[幂等与重试专题](./topics/idempotency-retries.md)、[断路器与隔离专题](./topics/circuit-breakers-bulkheads.md)、[API 版本治理专题](./topics/api-versioning.md)、[特性开关专题](./topics/feature-flags.md)
 
 ### 身份、权限与安全边界
 
@@ -250,7 +268,8 @@
 - `orjson`：更快的 JSON 编码解码
 - `msgspec`：强类型高性能序列化
 - `pandera`：结构化表校验
-- 系统整理见 [序列化性能专题](./topics/serialization-performance.md)、[Schema 演进专题](./topics/schema-evolution.md)、[数据契约专题](./topics/data-contracts.md)
+- `Pact`：消费者驱动契约
+- 系统整理见 [序列化性能专题](./topics/serialization-performance.md)、[Schema 演进专题](./topics/schema-evolution.md)、[数据契约专题](./topics/data-contracts.md)、[契约测试专题](./topics/contract-testing.md)、[消费者驱动契约专题](./topics/consumer-driven-contracts.md)
 
 ### RAG 与向量检索
 
@@ -372,6 +391,8 @@
 - [pre-commit：提交前检查](./third_party/pre_commit.md)
 - [pydantic：数据校验与建模](./third_party/pydantic.md)
 - [pydantic-settings：结构化配置](./third_party/pydantic_settings.md)
+- [dynaconf：多环境配置管理](./third_party/dynaconf.md)
+- [hvac：Vault 客户端](./third_party/hvac.md)
 - [orjson：高性能 JSON](./third_party/orjson.md)
 - [msgspec：高性能结构化序列化](./third_party/msgspec.md)
 - [redis-py：缓存与队列基础](./third_party/redis.md)
@@ -386,10 +407,13 @@
 - [pytest-xdist：并行测试](./third_party/pytest_xdist.md)
 - [Hypothesis：属性测试](./third_party/hypothesis.md)
 - [Schemathesis：API 契约测试](./third_party/schemathesis.md)
+- [Pact：消费者驱动契约测试](./third_party/pact.md)
 - [grpcio：RPC 通信](./third_party/grpc.md)
 - [gunicorn 与 uvicorn：服务部署入口](./third_party/gunicorn_uvicorn.md)
 - [SlowAPI：FastAPI 限流](./third_party/slowapi.md)
 - [tenacity：重试与退避](./third_party/tenacity.md)
+- [pybreaker：断路器](./third_party/pybreaker.md)
+- [Unleash：特性开关](./third_party/unleash.md)
 - [Casbin：策略引擎](./third_party/casbin.md)
 - [structlog：结构化日志](./third_party/structlog.md)
 - [prometheus-client：服务指标](./third_party/prometheus_client.md)
@@ -502,6 +526,14 @@
 - [模型注册专题](./topics/model-registry.md)
 - [特征库专题](./topics/feature-stores.md)
 - [契约测试专题](./topics/contract-testing.md)
+- [Webhooks 专题](./topics/webhooks.md)
+- [密钥管理专题](./topics/secrets-management.md)
+- [发布策略专题](./topics/deployment-strategies.md)
+- [特性开关专题](./topics/feature-flags.md)
+- [断路器与隔离专题](./topics/circuit-breakers-bulkheads.md)
+- [Outbox / Inbox 模式专题](./topics/outbox-inbox-patterns.md)
+- [消费者驱动契约专题](./topics/consumer-driven-contracts.md)
+- [事件驱动架构专题](./topics/event-driven-architecture.md)
 
 ### Web 和数据库
 

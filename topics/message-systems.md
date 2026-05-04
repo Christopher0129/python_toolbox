@@ -16,5 +16,8 @@
 - [celery](../third_party/celery.md)
 - [kafka-python](../third_party/kafka_python.md)
 - [缓存与队列专题](./cache-queues.md)
+- [事件驱动架构专题](./event-driven-architecture.md)
+- [Outbox / Inbox 模式专题](./outbox-inbox-patterns.md)
+- [消费者驱动契约专题](./consumer-driven-contracts.md)
 
 返回 [索引](../README.md)

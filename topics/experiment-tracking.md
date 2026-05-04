@@ -10,6 +10,7 @@
 - 运行环境
 - 数据版本
 - 特征版本
+- 实验分桶 / 变体信息
 
 ## 常见工具
 
@@ -22,5 +23,6 @@
 - [可观测性专题](./observability.md)
 - [模型注册专题](./model-registry.md)
 - [特征库专题](./feature-stores.md)
+- [特性开关专题](./feature-flags.md)
 
 返回 [索引](../README.md)

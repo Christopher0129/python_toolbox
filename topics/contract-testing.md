@@ -16,6 +16,7 @@
 - `pytest`
 - `httpx`
 - `Schemathesis`
+- `Pact`
 
 ## 实战建议
 
@@ -26,8 +27,10 @@
 ## 关联阅读
 
 - [Schemathesis](../third_party/schemathesis.md)
+- [Pact](../third_party/pact.md)
 - [接口测试专题](./api-testing.md)
 - [API 版本治理专题](./api-versioning.md)
 - [FastAPI 进阶专题](./fastapi-advanced.md)
+- [消费者驱动契约专题](./consumer-driven-contracts.md)
 
 返回 [索引](../README.md)

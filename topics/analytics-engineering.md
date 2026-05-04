@@ -10,6 +10,7 @@
 - 调度与发布
 - 实验跟踪与模型治理
 - 数据契约与 schema 演进
+- 特征口径复用和实验切分
 
 ## 常见工具
 
@@ -29,5 +30,7 @@
 - [数据契约专题](./data-contracts.md)
 - [Schema 演进专题](./schema-evolution.md)
 - [模型注册专题](./model-registry.md)
+- [特征库专题](./feature-stores.md)
+- [特性开关专题](./feature-flags.md)
 
 返回 [索引](../README.md)

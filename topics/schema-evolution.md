@@ -26,5 +26,6 @@
 - [Lakehouse 表格式专题](./table-formats-lakehouse.md)
 - [pandera](../third_party/pandera.md)
 - [Great Expectations](../third_party/great_expectations.md)
+- [事件驱动架构专题](./event-driven-architecture.md)
 
 返回 [索引](../README.md)
