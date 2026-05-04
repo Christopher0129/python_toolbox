@@ -22,5 +22,8 @@
 - [Outbox / Inbox 模式专题](./outbox-inbox-patterns.md)
 - [数据契约专题](./data-contracts.md)
 - [Schema 演进专题](./schema-evolution.md)
+- [CQRS 专题](./cqrs.md)
+- [Event Sourcing 专题](./event-sourcing.md)
+- [Saga 模式专题](./saga-patterns.md)
 
 返回 [索引](../README.md)

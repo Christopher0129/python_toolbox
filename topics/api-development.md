@@ -48,5 +48,7 @@ app/
 - [API 版本治理专题](./api-versioning.md)
 - [幂等与重试专题](./idempotency-retries.md)
 - [契约测试专题](./contract-testing.md)
+- [gRPC 进阶专题](./grpc-advanced.md)
+- [GraphQL API 专题](./graphql-apis.md)
 
 返回 [索引](../README.md)

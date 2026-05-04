@@ -17,6 +17,9 @@
 ## 关联阅读
 
 - [qdrant-client](../third_party/qdrant_client.md)
+- [sentence-transformers](../third_party/sentence_transformers.md)
+- [Embedding 与 Rerank 专题](./embeddings-reranking.md)
+- [RAG 流水线专题](./rag-pipelines.md)
 - [Web 抓取专题](./web-scraping.md)
 - [数据仓库与 ETL 专题](./data-warehouse-etl.md)
 

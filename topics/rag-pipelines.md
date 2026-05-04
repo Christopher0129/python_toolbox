@@ -27,5 +27,9 @@
 - [FAISS](../third_party/faiss.md)
 - [qdrant-client](../third_party/qdrant_client.md)
 - [pymilvus](../third_party/pymilvus.md)
+- [sentence-transformers](../third_party/sentence_transformers.md)
+- [unstructured](../third_party/unstructured.md)
+- [文档抽取专题](./document-extraction.md)
+- [Embedding 与 Rerank 专题](./embeddings-reranking.md)
 
 返回 [索引](../README.md)

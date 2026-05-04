@@ -34,5 +34,7 @@
 - [特性开关专题](./feature-flags.md)
 - [工作流编排专题](./workflow-orchestration.md)
 - [ClickHouse 分析专题](./clickhouse-analytics.md)
+- [Spark 数据处理专题](./spark-data-processing.md)
+- [Delta Lake 专题](./delta-lake.md)
 
 返回 [索引](../README.md)

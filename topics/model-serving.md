@@ -16,5 +16,8 @@
 - [特征库专题](./feature-stores.md)
 - [FastAPI 进阶专题](./fastapi-advanced.md)
 - [分布式计算专题](./distributed-computing.md)
+- [推理优化专题](./inference-optimization.md)
+- [ONNX Runtime](../third_party/onnxruntime.md)
+- [Triton 推理服务专题](./triton-inference-serving.md)
 
 返回 [索引](../README.md)

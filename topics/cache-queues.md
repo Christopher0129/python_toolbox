@@ -20,7 +20,11 @@
 
 - [redis-py](../third_party/redis.md)
 - [celery](../third_party/celery.md)
+- [Dramatiq](../third_party/dramatiq.md)
+- [arq](../third_party/arq.md)
 - [queue](../stdlib/queue.md)
 - [异步编程专题](./async-programming.md)
+- [Redis 高级专题](./redis-advanced.md)
+- [任务队列架构专题](./task-queue-architectures.md)
 
 返回 [索引](../README.md)

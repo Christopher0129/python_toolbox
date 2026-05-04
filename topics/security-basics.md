@@ -30,5 +30,7 @@
 - [配置管理专题](./config-management.md)
 - [密钥管理专题](./secrets-management.md)
 - [Webhooks 专题](./webhooks.md)
+- [密码安全专题](./password-security.md)
+- [供应链安全专题](./supply-chain-security.md)
 
 返回 [索引](../README.md)

@@ -25,5 +25,7 @@
 - [SQL 优化专题](./sql-optimization.md)
 - [数据契约专题](./data-contracts.md)
 - [Schema 演进专题](./schema-evolution.md)
+- [Spark 数据处理专题](./spark-data-processing.md)
+- [Delta Lake 专题](./delta-lake.md)
 
 返回 [索引](../README.md)
