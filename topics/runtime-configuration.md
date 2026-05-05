@@ -27,7 +27,10 @@
 
 - [配置管理专题](./config-management.md)
 - [密钥管理专题](./secrets-management.md)
+- [配置灰度与回滚专题](./config-rollout-strategies.md)
 - [特性开关专题](./feature-flags.md)
 - [服务发现专题](./service-discovery.md)
+- [Kubernetes ConfigMap 与运行时配置专题](./kubernetes-configmaps-runtime-config.md)
+- [Kubernetes Secret 分发专题](./kubernetes-secret-distribution.md)
 
 返回 [索引](../README.md)

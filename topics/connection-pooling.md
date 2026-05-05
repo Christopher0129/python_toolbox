@@ -26,9 +26,12 @@
 ## 关联阅读
 
 - [httpx](../third_party/httpx.md)
+- [psycopg_pool](../third_party/psycopg_pool.md)
 - [asyncpg](../third_party/asyncpg.md)
 - [databases](../third_party/databases.md)
 - [异步数据库专题](./async-database-access.md)
+- [PostgreSQL 连接耗尽专题](./postgresql-connection-exhaustion.md)
+- [PostgreSQL 语句超时专题](./postgresql-statement-timeouts.md)
 - [压测专题](./load-testing.md)
 
 返回 [索引](../README.md)

@@ -28,6 +28,9 @@
 - [搜索系统专题](./search-systems.md)
 - [混合检索专题](./hybrid-retrieval.md)
 - [相关性调优专题](./relevance-tuning.md)
+- [查询意图分类专题](./query-intent-classification.md)
+- [搜索零结果分析专题](./search-zero-results.md)
+- [搜索过滤设计专题](./search-filter-design.md)
 - [RAG 流水线专题](./rag-pipelines.md)
 - [Prompt 工程专题](./prompt-engineering.md)
 

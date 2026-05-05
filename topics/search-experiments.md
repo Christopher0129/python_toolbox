@@ -26,6 +26,9 @@
 ## 关联阅读
 
 - [搜索相关性调优专题](./relevance-tuning.md)
+- [搜索诊断专题](./search-debugging.md)
+- [搜索结果多样性专题](./search-result-diversification.md)
+- [搜索多租户隔离专题](./search-multitenancy.md)
 - [RAG 评测专题](./rag-evaluation.md)
 - [Embedding 与 Rerank 专题](./embeddings-reranking.md)
 - [查询改写专题](./query-rewriting.md)

@@ -29,5 +29,7 @@
 - [模型路由专题](./model-routing.md)
 - [LLM 网关专题](./llm-gateway.md)
 - [容量规划专题](./capacity-planning.md)
+- [搜索多租户隔离专题](./search-multitenancy.md)
+- [Kubernetes 成本优化专题](./kubernetes-cost-optimization.md)
 
 返回 [索引](../README.md)

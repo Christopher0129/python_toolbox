@@ -29,5 +29,7 @@
 - [连接池专题](./connection-pooling.md)
 - [Worker 运行治理专题](./worker-runtime-operations.md)
 - [成本治理专题](./cost-governance.md)
+- [Kubernetes 成本优化专题](./kubernetes-cost-optimization.md)
+- [PostgreSQL 统计与观测专题](./postgresql-stats-observability.md)
 
 返回 [索引](../README.md)

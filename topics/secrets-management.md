@@ -31,5 +31,8 @@
 - [配置管理专题](./config-management.md)
 - [安全基础专题](./security-basics.md)
 - [Token 认证专题](./token-authentication.md)
+- [密钥轮换专题](./secrets-rotation.md)
+- [Kubernetes Secret 分发专题](./kubernetes-secret-distribution.md)
+- [Kubernetes 工作负载身份专题](./kubernetes-workload-identity.md)
 
 返回 [索引](../README.md)
