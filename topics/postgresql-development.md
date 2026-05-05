@@ -19,8 +19,11 @@
 - [SQL 优化专题](./sql-optimization.md)
 - [PostgreSQL 锁与并发专题](./postgresql-locking.md)
 - [PostgreSQL Vacuum 与膨胀专题](./postgresql-vacuum-bloat.md)
+- [PostgreSQL WAL 与 Checkpoint 专题](./postgresql-wal-checkpoint.md)
+- [PostgreSQL 备份与恢复专题](./postgresql-backup-restore.md)
 - [PostgreSQL 复制与故障切换专题](./postgresql-replication-failover.md)
 - [PostgreSQL 分区维护专题](./postgresql-partition-maintenance.md)
+- [PostgreSQL 逻辑解码专题](./postgresql-logical-decoding.md)
 - [事务与隔离级别专题](./transaction-isolation.md)
 
 返回 [索引](../README.md)

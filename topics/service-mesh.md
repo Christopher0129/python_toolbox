@@ -28,5 +28,7 @@
 - [可观测性专题](./observability.md)
 - [发布策略专题](./deployment-strategies.md)
 - [Kubernetes 运维专题](./kubernetes-operations.md)
+- [Kubernetes Ingress 与流量入口专题](./kubernetes-ingress-traffic.md)
+- [Kubernetes 多集群专题](./kubernetes-multi-cluster.md)
 
 返回 [索引](../README.md)

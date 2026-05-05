@@ -27,6 +27,7 @@
 
 - [Helm 与 Chart 专题](./helm-charts.md)
 - [Kubernetes 运维专题](./kubernetes-operations.md)
+- [Kubernetes 多集群专题](./kubernetes-multi-cluster.md)
 - [基础设施自动化专题](./infrastructure-automation.md)
 - [供应链安全专题](./supply-chain-security.md)
 

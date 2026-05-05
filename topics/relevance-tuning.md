@@ -27,6 +27,8 @@
 
 - [搜索系统专题](./search-systems.md)
 - [混合检索专题](./hybrid-retrieval.md)
+- [搜索同义词与分析器专题](./search-synonyms-analyzers.md)
+- [搜索实验专题](./search-experiments.md)
 - [RAG 评测专题](./rag-evaluation.md)
 - [向量检索专题](./vector-retrieval.md)
 

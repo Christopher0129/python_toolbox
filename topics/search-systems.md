@@ -20,10 +20,12 @@
 - [rank-bm25](../third_party/rank_bm25.md)
 - [向量检索专题](./vector-retrieval.md)
 - [混合检索专题](./hybrid-retrieval.md)
+- [搜索同义词与分析器专题](./search-synonyms-analyzers.md)
 - [查询改写专题](./query-rewriting.md)
 - [元数据过滤专题](./metadata-filtering.md)
 - [索引构建流水线专题](./indexing-pipelines.md)
 - [搜索相关性调优专题](./relevance-tuning.md)
+- [搜索实验专题](./search-experiments.md)
 - [RAG 流水线专题](./rag-pipelines.md)
 
 返回 [索引](../README.md)

@@ -27,6 +27,8 @@
 
 - [向量检索专题](./vector-retrieval.md)
 - [RAG 流水线专题](./rag-pipelines.md)
+- [Reranker 服务化专题](./reranker-serving.md)
+- [搜索实验专题](./search-experiments.md)
 - [sentence-transformers](../third_party/sentence_transformers.md)
 - [qdrant-client](../third_party/qdrant_client.md)
 

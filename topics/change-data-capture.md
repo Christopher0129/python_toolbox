@@ -25,6 +25,7 @@
 
 ## 关联阅读
 
+- [PostgreSQL 逻辑解码专题](./postgresql-logical-decoding.md)
 - [Schema Registry 专题](./schema-registry.md)
 - [事件驱动架构专题](./event-driven-architecture.md)
 - [数据仓库与 ETL 专题](./data-warehouse-etl.md)

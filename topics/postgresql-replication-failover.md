@@ -26,6 +26,8 @@
 ## 关联阅读
 
 - [PostgreSQL 开发专题](./postgresql-development.md)
+- [PostgreSQL WAL 与 Checkpoint 专题](./postgresql-wal-checkpoint.md)
+- [PostgreSQL 备份与恢复专题](./postgresql-backup-restore.md)
 - [PostgreSQL 锁与并发专题](./postgresql-locking.md)
 - [PostgreSQL VACUUM 与膨胀专题](./postgresql-vacuum-bloat.md)
 - [连接池专题](./connection-pooling.md)

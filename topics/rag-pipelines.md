@@ -37,6 +37,7 @@
 - [元数据过滤专题](./metadata-filtering.md)
 - [索引构建流水线专题](./indexing-pipelines.md)
 - [Embedding 与 Rerank 专题](./embeddings-reranking.md)
+- [Reranker 服务化专题](./reranker-serving.md)
 - [上下文工程专题](./context-engineering.md)
 - [Prompt 工程专题](./prompt-engineering.md)
 - [RAG 评测专题](./rag-evaluation.md)
