@@ -18,5 +18,6 @@
 - [认证与授权专题](./auth-authorization.md)
 - [RBAC 与 ABAC 专题](./rbac-abac.md)
 - [策略灰度发布专题](./policy-rollout-strategies.md)
+- [策略测试专题](./policy-testing.md)
 
 返回 [索引](../README.md)
